@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master page.master.cs"
+    Inherits="e_FormaPro_v2._0.Forms.Master_page" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="../css/master.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="cph_Head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header id="header">
+        <section id="compte">
+            <asp:LinkButton ID="LinkButton_ProfilDuCompte" runat="server" CssClass="compte-lien">
+            </asp:LinkButton>
+            <br />
+            Bienvenue dans l&#39;espace <span class="espace">EXEMPLE</span>
+        </section>
+        <section id="déconnexion">
+            <asp:ImageButton ID="ImageButton_Déconnexion" runat="server" ImageUrl="~/img/Déconnexion.png"
+                Width="20px" OnClick="ImageButton_Déconnexion_Click" />
+        </section>
+        <section class="ghost">
+        </section>
+    </header>
+    <section id="main">
+        <nav id="nav">
+            <ul id="menu">
+                <li>
+                    <asp:LinkButton ID="LinkButton1" Text="Notifications" runat="server" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton2" Text="... ... ..." runat="server" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton3" Text="... ... ..." runat="server" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton4" Text="... ... ..." runat="server" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton5" Text="Année scolaire" runat="server" /></li>
+            </ul>
+        </nav>
+        <section id="contenu">
+            <h1>
+                <asp:ContentPlaceHolder ID="cph_Titre" runat="server">
+                </asp:ContentPlaceHolder>
+            </h1>
+            <asp:ContentPlaceHolder ID="cph_Contenu" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <section class="ghost">
+        </section>
+    </section>
+    </form>
+</body>
+</html>

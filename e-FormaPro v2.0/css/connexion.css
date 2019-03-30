@@ -1,0 +1,25 @@
+﻿*
+{
+    margin: 5px;
+    padding: 5px;
+}
+#main
+{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+td
+{
+    width: 1px;
+    white-space: nowrap;
+}
+thead td, tfoot td
+{
+    text-align: center;
+      padding: 20px;
+}

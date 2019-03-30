@@ -1,0 +1,78 @@
+﻿body
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header, #main
+{
+    margin-top: 20px;
+}
+
+/*header section*/
+#header
+{
+    position: relative;
+    border-bottom: 1px solid black;
+}
+#compte
+{
+    float: left;
+    width: 80%;
+}
+.compte-lien
+{
+    font-size: 1.5em;
+}
+#déconnexion
+{
+    width: 20%;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/*main section*/
+#main
+{
+    /*border: 1px solid black;*/
+}
+#main #nav
+{
+    /*border: 1px solid red;*/
+    float: left;
+    width: 20%;
+}
+#menu
+{
+    list-style: none;
+    width: 97%;
+}
+#menu li
+{
+    border-color: Gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+#menu li:hover
+{
+    border-color: blue;
+    cursor: pointer;
+    background-color: #87CEFA;
+}
+#main #contenu
+{
+    /*border: 1px solid green;*/
+    width: 80%;
+    float: right;
+}
+.ghost
+{
+    clear: both;
+}
