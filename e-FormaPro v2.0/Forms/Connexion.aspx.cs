@@ -13,7 +13,7 @@ namespace e_FormaPro_v2._0.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Write("salam");
         }
 
         protected void Button_SeConnecter_Click(object sender, EventArgs e)
