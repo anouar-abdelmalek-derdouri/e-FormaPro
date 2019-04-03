@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master Page_Directeur.master.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Master_Page_Directeur" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/Style_MasterPage.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 280px;
+        }
+        .style2
+        {
+            width: 846px;
+        }
+        .auto-style1 {
+            background-color: aqua;
+            height: 100%;
+            width: 164px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+         <header class ="header">
+                      <center> <h1>WELCOME</h1> </center>
+
+         </header>
+
+
+            <table style="width:100%;">             
+                <tr>
+                    <td style="height:100%;height: 100%;
+                                 display: inline-block;" >
+                        <asp:Menu ID="Menu_Achievers" StaticDisplayLevels ="2" runat="server">
+                            <StaticMenuItemStyle BorderColor ="Blue" BorderWidth="1.5px" BorderStyle="Solid" Font-Size="Medium" VerticalPadding="6px"/>
+                         <StaticHoverStyle Font-Bold="true" />
+                            <StaticSelectedStyle BackColor="Red" />
+                            <Items>
+                                <asp:MenuItem NavigateUrl="Forms_Directeur/Formation.aspx" Text="Formation" Value="Formation">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Forms_Directeur/Filière.aspx" Text="Filière" Value="Filière">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Module" Value="Module" NavigateUrl="Forms_Directeur/Module.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Formateur" Value="Formateur">
+                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Affectation des modules aux formateurs.aspx" 
+                                        Text="Affectation des modules" Value="Affectation des modules">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Gestion des formateurs" Value="Gestion des formateurs" 
+                                        NavigateUrl="Forms_Directeur/Gestion des formateurs.aspx">
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Groupe" Value="Groupe" NavigateUrl="Forms_Directeur/Groupe.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Stagiaire" Value="Stagiaire" NavigateUrl="Forms_Directeur/Stagiaire.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Salle" Value="Salle" NavigateUrl="Forms_Directeur/Salle.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Forms_Directeur/Etat d'avancement.aspx" Text="Etat d'avancement" 
+                                    Value="Etat d'avancement"></asp:MenuItem>
+                                <asp:MenuItem Text="Examen" Value="Examen">
+                                    <asp:MenuItem Text="Proposition " Value="Proposition " 
+                                        NavigateUrl="Forms_Directeur/Proposition.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Surveillance" Value="Surveillance" 
+                                        NavigateUrl="Forms_Directeur/Surveillance.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Absence" Value="Absence">
+                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Demande d'autorisation d'absence.aspx" 
+                                        Text="Demande d'autorisation d'absence" 
+                                        Value="Demande d'autorisation d'absence"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Absence du formateur.aspx" 
+                                        Text="Absences des formateurs" Value="Absences des formateurs">
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Forms_Directeur/Jour Feries.aspx" Text="Les jours Fériés" 
+                                    Value="Les jours Fériés"></asp:MenuItem>
+                                <asp:MenuItem Text="Réunion" Value="Réunion" NavigateUrl="Forms_Directeur/Réunion.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Forms_Directeur/Club.aspx" Text="Club" Value="Club"></asp:MenuItem>
+                                <asp:MenuItem Text="Gestion des entreprises" Value="Gestion des entreprises" 
+                                    NavigateUrl="Forms_Directeur/Gestion des entreprises.aspx">
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style2">
+                        <asp:ContentPlaceHolder ID = "ContentPlaceHolder_main" runat = "server">
+
+                        </asp:ContentPlaceHolder>
+                        
+                        </td>
+                    <td>
+                        Right Menu</td>
+                </tr>
+               
+            </table>
+
+
+         <footer class ="footer">
+                 <p>The Achievers, Copyright &copy; 2019</p>
+        </footer>
+        
+
+    </form>
+</body>
+</html>

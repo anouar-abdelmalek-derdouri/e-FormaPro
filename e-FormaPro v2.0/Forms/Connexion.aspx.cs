@@ -41,6 +41,12 @@ namespace e_FormaPro_v2._0.Forms
 #warning A supprimer : Juste pour la démonstration
             Session["compte"] = new Stagiaire() { Login = "120319990002", MotDePasse = "azerty", Nom = "alaoui", Prénom = "hassan" };
             Response.Redirect("~/Forms/Exemple/Accueil.aspx");
+
+             //The Achievers
+            //if (TextBox_Login.Text == "Directeur" && TextBox_MotDePasse.Text == "azerty")
+            //{
+            //    Response.Redirect("~/Forms/Directeur/Master Page_Directeur.Master");
+            //}
         }
     }
 }
