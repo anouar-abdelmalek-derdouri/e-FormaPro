@@ -64,6 +64,7 @@
     <Content Include="Forms\Connexion.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Absence du formateur.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Affectation des modules aux formateurs.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Club.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Etat d%27avancement.aspx" />
@@ -79,6 +80,7 @@
     <Content Include="Forms\Directeur\Forms_Directeur\Salle.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx" />
+    <Content Include="Forms\Directeur\Style_DirecteurMP\Style_MasterPage.css" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
     <Content Include="img\Déconnexion.png" />
     <Content Include="Web.config" />
@@ -117,6 +119,13 @@
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\Affectation des modules aux formateurs.aspx.designer.cs">
       <DependentUpon>Affectation des modules aux formateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx.cs">
+      <DependentUpon>Annee Scolaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx.designer.cs">
+      <DependentUpon>Annee Scolaire.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\Club.aspx.cs">
       <DependentUpon>Club.aspx</DependentUpon>

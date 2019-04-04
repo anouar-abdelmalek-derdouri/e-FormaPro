@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="Style/Style_MasterPage.css" rel="stylesheet" type="text/css" />
+    <link href="Style_DirecteurMP/Style_MasterPage.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .style1
         {
@@ -78,6 +78,9 @@
                                 <asp:MenuItem NavigateUrl="Forms_Directeur/Club.aspx" Text="Club" Value="Club"></asp:MenuItem>
                                 <asp:MenuItem Text="Gestion des entreprises" Value="Gestion des entreprises" 
                                     NavigateUrl="Forms_Directeur/Gestion des entreprises.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Année Scolaire" Value="Année Scolaire" 
+                                    NavigateUrl="Forms_Directeur/Annee Scolaire.aspx">
                                 </asp:MenuItem>
                             </Items>
                         </asp:Menu>
