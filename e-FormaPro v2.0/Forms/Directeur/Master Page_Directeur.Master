@@ -82,6 +82,9 @@
                                 <asp:MenuItem Text="Année Scolaire" Value="Année Scolaire" 
                                     NavigateUrl="Forms_Directeur/Annee Scolaire.aspx">
                                 </asp:MenuItem>
+                                <asp:MenuItem Text="Delegation" Value="Delegation" 
+                                    NavigateUrl="Forms_Directeur/Delegation.aspx">
+                                </asp:MenuItem>
                             </Items>
                         </asp:Menu>
                     </td>
