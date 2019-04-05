@@ -83,6 +83,30 @@
     <Content Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx" />
     <Content Include="Forms\Directeur\Style_DirecteurMP\Style_MasterPage.css" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Activitées.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\CreationClub.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\defaultpage.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Demandes.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Listclub.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Notification.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Planification.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\Projet.csproj" />
+    <Content Include="Forms\Formateur\Forms_Club\Projet.csproj.user" />
+    <Content Include="Forms\Formateur\Forms_Club\Publication.aspx" />
+    <Content Include="Forms\Formateur\Forms_Club\raport.aspx" />
+    <Content Include="Forms\Formateur\Icon_club\add_user_group_man_man_32px.png" />
+    <Content Include="Forms\Formateur\Icon_club\appointment_reminders_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\chevron_left_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\chevron_right_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\deleted_message_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\downloading_updates_100px.png" />
+    <Content Include="Forms\Formateur\Icon_club\downloads_foldelr_100px.png" />
+    <Content Include="Forms\Formateur\Icon_club\download_,100px.png" />
+    <Content Include="Forms\Formateur\Icon_club\download_100px.png" />
+    <Content Include="Forms\Formateur\Icon_club\message_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\report_card_48px.png" />
+    <Content Include="Forms\Formateur\Icon_club\verified_account_48px.png" />
+    <Content Include="Forms\Formateur\Style_Club\StyleSheet1.css" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de transfert.aspx" />
@@ -264,6 +288,83 @@
     <Compile Include="Forms\Exemple\Accueil.aspx.designer.cs">
       <DependentUpon>Accueil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Activitées.aspx.cs">
+      <DependentUpon>Activitées.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Activitées.aspx.designer.cs">
+      <DependentUpon>Activitées.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\CreationClub.aspx.cs">
+      <DependentUpon>CreationClub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\CreationClub.aspx.designer.cs">
+      <DependentUpon>CreationClub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\defaultpage.aspx.cs">
+      <DependentUpon>defaultpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\defaultpage.aspx.designer.cs">
+      <DependentUpon>defaultpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Demandes.aspx.cs">
+      <DependentUpon>Demandes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Demandes.aspx.designer.cs">
+      <DependentUpon>Demandes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Listclub.aspx.cs">
+      <DependentUpon>Listclub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Listclub.aspx.designer.cs">
+      <DependentUpon>Listclub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Notification.aspx.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Notification.aspx.designer.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Planification.aspx.cs">
+      <DependentUpon>Planification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Planification.aspx.designer.cs">
+      <DependentUpon>Planification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Publication.aspx.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Publication.aspx.designer.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\raport.aspx.cs">
+      <DependentUpon>raport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\raport.aspx.designer.cs">
+      <DependentUpon>raport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formateur\Forms_Club\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master page.Master.cs">
       <DependentUpon>Master page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -363,7 +464,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\Entreprise\" />
-    <Folder Include="Forms\Formateur\" />
     <Folder Include="Forms\Stagiaire\" />
   </ItemGroup>
   <ItemGroup>
@@ -371,6 +471,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\Surveillant\SurveillantGénéral_MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Formateur\Forms_Club\Site1.Master" />
+    <Content Include="Forms\Formateur\Forms_Club\Site2.Master" />
+    <Content Include="Forms\Formateur\Forms_Club\Web.config" />
+    <None Include="Forms\Formateur\Forms_Club\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Forms\Formateur\Forms_Club\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
