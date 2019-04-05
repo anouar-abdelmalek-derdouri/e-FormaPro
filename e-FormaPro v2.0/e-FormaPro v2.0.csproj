@@ -83,6 +83,16 @@
     <Content Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx" />
     <Content Include="Forms\Directeur\Style_DirecteurMP\Style_MasterPage.css" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de transfert.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Gestion du surveillances.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\infosD%27absenceDuStagiaires.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Listes d%27absences.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Listes Des Stagiaires.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Planaspx.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Profil.aspx" />
+    <Content Include="Forms\Surveillant\Forms_Surveillant\Transfert.aspx" />
     <Content Include="img\Déconnexion.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -261,6 +271,83 @@
     <Compile Include="Forms\Master page.Master.designer.cs">
       <DependentUpon>Master page.Master</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx.cs">
+      <DependentUpon>Demande d%27autorisation d%27absence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx.designer.cs">
+      <DependentUpon>Demande d%27autorisation d%27absence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx.cs">
+      <DependentUpon>Demandes de certificat de scolarité.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx.designer.cs">
+      <DependentUpon>Demandes de certificat de scolarité.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demandes de transfert.aspx.cs">
+      <DependentUpon>Demandes de transfert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Demandes de transfert.aspx.designer.cs">
+      <DependentUpon>Demandes de transfert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Gestion du surveillances.aspx.cs">
+      <DependentUpon>Gestion du surveillances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Gestion du surveillances.aspx.designer.cs">
+      <DependentUpon>Gestion du surveillances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\infosD%27absenceDuStagiaires.aspx.cs">
+      <DependentUpon>infosD%27absenceDuStagiaires.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\infosD%27absenceDuStagiaires.aspx.designer.cs">
+      <DependentUpon>infosD%27absenceDuStagiaires.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Listes d%27absences.aspx.cs">
+      <DependentUpon>Listes d%27absences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Listes d%27absences.aspx.designer.cs">
+      <DependentUpon>Listes d%27absences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Listes Des Stagiaires.aspx.cs">
+      <DependentUpon>Listes Des Stagiaires.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Listes Des Stagiaires.aspx.designer.cs">
+      <DependentUpon>Listes Des Stagiaires.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Planaspx.aspx.cs">
+      <DependentUpon>Planaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Planaspx.aspx.designer.cs">
+      <DependentUpon>Planaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Profil.aspx.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Profil.aspx.designer.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Transfert.aspx.cs">
+      <DependentUpon>Transfert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\Forms_Surveillant\Transfert.aspx.designer.cs">
+      <DependentUpon>Transfert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Surveillant\SurveillantGénéral_MasterPage.Master.cs">
+      <DependentUpon>SurveillantGénéral_MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Surveillant\SurveillantGénéral_MasterPage.Master.designer.cs">
+      <DependentUpon>SurveillantGénéral_MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Managers\ComptesManager.cs" />
     <Compile Include="Managers\EncadrantsManager.cs" />
     <Compile Include="Managers\EntreprisesManager.cs" />
@@ -278,10 +365,12 @@
     <Folder Include="Forms\Entreprise\" />
     <Folder Include="Forms\Formateur\" />
     <Folder Include="Forms\Stagiaire\" />
-    <Folder Include="Forms\Surveillant\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\Directeur\Master Page_Directeur.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Surveillant\SurveillantGénéral_MasterPage.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

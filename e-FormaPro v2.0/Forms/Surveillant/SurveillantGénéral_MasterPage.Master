@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SurveillantGénéral_MasterPage.master.cs" Inherits="e_FormaPro_v2._0.Forms.Surveillant.SurveillantGénéral_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 484px;
+        }
+        .auto-style2 {
+            width: 328px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%; height: 314px;">
+                <tr>
+                    <td colspan="3" bgcolor="Gray" class="style4">
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="Profil.aspx">Mr BOTROS</asp:LinkButton>
+                        <br />
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" 
+                            Text="Bienvenue dans l'espace "></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" 
+                            Font-Names="Britannic Bold" Font-Size="Larger" Text="Surveillant général"></asp:Label>
+                        <br />
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style1" align="left" bgcolor="#E3EAEB">
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" 
+                            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" 
+                            ForeColor="#666666" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem Text="Notifications" 
+                                    Value="Notifications">
+                                    <asp:MenuItem NavigateUrl="Demande d'autorisation d'absence.aspx" 
+                                        Text="Demande d'autorisation d'absence" 
+                                        Value="Demande d'autorisation d'absence"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Demandes de transfert.aspx" 
+                                        Text="Demandes de transfert" Value="Demandes de transfert"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Demandes de certificat de scolarité.aspx" 
+                                        Text="Demandes de certificat de scolarité" 
+                                        Value="Demandes de certificat de scolarité"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Listes Des Stagiaires.aspx" 
+                                    Text="Listes Des Stagiaires" Value="Listes Des Stagiaires"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Listes d'absences.aspx" Text="Listes d'absences" 
+                                    Value="Listes d'absences"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Transfert.aspx" Text="Transfert" Value="Transfert">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Plan de surveillaces" Value="Plan de surveillaces">
+                                    <asp:MenuItem NavigateUrl="Gestion du surveillances.aspx" 
+                                        Text="Gestion du surveillances" Value="Gestion du surveillances">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Planaspx.aspx" Text="Plan" Value="Plan">
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                        </asp:Menu>
+                        <br />
+                    </td>
+                    <td class="auto-style2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" bgcolor="Gray">
+                        &nbsp;</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
