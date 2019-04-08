@@ -12,11 +12,21 @@
         <tr>
             <td class="style4">
                 <asp:Button ID="Button_Confirmer" runat="server" Text="Confirmer" 
-                    Width="259px" />
-            </td>
-            <td class="style3">
+                    Width="184px" />
                 <asp:Button ID="Button_Refuser" runat="server" Text="Refuser" Width="182px" />
             </td>
+            <td class="style3">
+                &nbsp;</td>
+           
+        </tr>
+       
+        <tr>
+            <td class="style4">
+                <asp:GridView ID="bsence0" runat="server" Width="783px">
+                </asp:GridView>
+            </td>
+            <td class="style3">
+                &nbsp;</td>
            
         </tr>
        

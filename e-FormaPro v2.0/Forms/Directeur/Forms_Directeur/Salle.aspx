@@ -8,7 +8,7 @@
             <td class="style14">
                 Salle :</td>
             <td class="style15">
-                <asp:TextBox ID="TextBox_Salles" runat="server" Height="30px" Width="186px"></asp:TextBox>
+                <asp:TextBox ID="TextBox_Salles" runat="server" Height="16px" Width="186px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -17,7 +17,7 @@
             <td class="style17">
                 Capacité :</td>
             <td class="style18">
-                <asp:TextBox ID="TextBox_Capacité" runat="server" Height="33px" Width="186px"></asp:TextBox>
+                <asp:TextBox ID="TextBox_Capacité" runat="server" Height="16px" Width="186px"></asp:TextBox>
             </td>
         </tr>
         <tr>

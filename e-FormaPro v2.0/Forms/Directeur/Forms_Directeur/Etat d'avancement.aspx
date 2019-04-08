@@ -42,9 +42,9 @@
         </tr>
         <tr>
             <td  colspan = "2">
-                <asp:Chart ID="Chart1" runat="server">
+                <asp:Chart ID="Chart1" runat="server" Width="619px">
                     <series>
-                        <asp:Series ChartType="Pie" Name="Series1">
+                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1">
                         </asp:Series>
                     </series>
                     <chartareas>
@@ -52,7 +52,7 @@
                         </asp:ChartArea>
                     </chartareas>
                 </asp:Chart>
-            </td>
+                s</td>
             
         </tr>
     </table>

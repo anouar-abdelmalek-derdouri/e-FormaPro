@@ -175,6 +175,24 @@ namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur {
         protected global::System.Web.UI.WebControls.TextBox TextBox_Theorique;
         
         /// <summary>
+        /// CheckBox_Regionalise control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Regionalise;
+        
+        /// <summary>
+        /// Label_annee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_annee;
+        
+        /// <summary>
         /// button_ajouter control.
         /// </summary>
         /// <remarks>

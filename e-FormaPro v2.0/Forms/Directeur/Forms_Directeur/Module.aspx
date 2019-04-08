@@ -3,7 +3,7 @@
 
     <table style="width:100%;">
         <tr>
-            <td style="width: 149px">
+            <td>
                 &nbsp;</td>
             <td style="width: 138px">
                 <asp:Label ID="Label1" runat="server" Text="Numéro :"></asp:Label>
@@ -13,7 +13,7 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
                 <asp:Label ID="Label2" runat="server" Text="Nom Module :"></asp:Label>
             </td>
             <td style="width: 138px">
@@ -27,7 +27,7 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
                 <asp:Label ID="Label4" runat="server" Text="Niveau :"></asp:Label>
             </td>
             <td style="width: 138px">
@@ -43,7 +43,7 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
                 <asp:Label ID="Label6" runat="server" Text="Filiere :"></asp:Label>
             </td>
             <td style="width: 138px">
@@ -61,7 +61,7 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
                 &nbsp;</td>
             <td style="width: 138px">
                 <asp:Label ID="Label10" runat="server" Text="Coefficient :"></asp:Label>
@@ -76,27 +76,26 @@
                 </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td style="height: 23px;">
+                </td>
+            <td style="width: 138px; height: 23px;">
                 &nbsp;</td>
-            <td style="width: 138px">
-                <asp:Button ID="button_ajouter" runat="server" Text="Ajouter" Width="136px" />
+            <td style="width: 144px; height: 23px;">
+                <asp:CheckBox ID="CheckBox_Regionalise" runat="server" Text="Regionalise" />
             </td>
-            <td style="width: 144px">
-                &nbsp;</td>
         </tr>
         <tr>
             <td style="height: 23px;"  colspan="4">
-                <asp:GridView ID="GridView_Module" runat="server" Width="563px">
-                </asp:GridView>
-            </td>
+                &nbsp;</td>
            
           
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
                 &nbsp;</td>
             <td style="width: 138px">
-                &nbsp;</td>
+                <asp:Label ID="Label_annee" runat="server" Text="2018/2019"></asp:Label>
+            </td>
             <td style="width: 144px">
                 &nbsp;</td>
                 <td style="width: 106px">
@@ -104,7 +103,42 @@
                 </td>
         </tr>
         <tr>
-            <td style="width: 149px">
+            <td>
+                &nbsp;</td>
+            <td style="width: 138px">
+                &nbsp;</td>
+            <td style="width: 144px">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td style="width: 138px">
+                &nbsp;</td>
+            <td style="width: 144px">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Button ID="button_ajouter" runat="server" Text="Ajouter" Width="136px" />
+            </td>
+            <td style="width: 138px">
+                &nbsp;</td>
+            <td style="width: 144px">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:GridView ID="GridView_Module" runat="server" Width="563px">
+                </asp:GridView>
+            </td>
+            <td style="width: 138px">
+                &nbsp;</td>
+            <td style="width: 144px">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
                 &nbsp;</td>
             <td style="width: 138px">
                 &nbsp;</td>

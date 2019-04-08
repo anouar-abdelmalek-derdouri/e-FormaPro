@@ -22,30 +22,12 @@ namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBox_Annee control.
+        /// DropDownList_Annee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Annee;
-        
-        /// <summary>
-        /// Button_Ajouter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Ajouter;
-        
-        /// <summary>
-        /// GridView_AnneeScolaire control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView_AnneeScolaire;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Annee;
     }
 }

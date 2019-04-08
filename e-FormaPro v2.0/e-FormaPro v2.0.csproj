@@ -76,11 +76,11 @@
     <Content Include="Forms\Directeur\Forms_Directeur\Groupe.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Jour Feries.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Module.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Proposition.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\EFMs.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Réunion.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Salle.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx" />
     <Content Include="Forms\Directeur\Style_DirecteurMP\Style_MasterPage.css" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\Activitées.aspx" />
@@ -239,12 +239,12 @@
     <Compile Include="Forms\Directeur\Forms_Directeur\Module.aspx.designer.cs">
       <DependentUpon>Module.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Proposition.aspx.cs">
-      <DependentUpon>Proposition.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\EFMs.aspx.cs">
+      <DependentUpon>EFMs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Proposition.aspx.designer.cs">
-      <DependentUpon>Proposition.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\EFMs.aspx.designer.cs">
+      <DependentUpon>EFMs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\Réunion.aspx.cs">
       <DependentUpon>Réunion.aspx</DependentUpon>
@@ -267,12 +267,12 @@
     <Compile Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx.designer.cs">
       <DependentUpon>Stagiaire.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx.cs">
-      <DependentUpon>Surveillance.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx.cs">
+      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Surveillance.aspx.designer.cs">
-      <DependentUpon>Surveillance.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx.designer.cs">
+      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Master Page_Directeur.Master.cs">
       <DependentUpon>Master Page_Directeur.Master</DependentUpon>

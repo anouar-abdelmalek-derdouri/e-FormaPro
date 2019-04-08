@@ -59,10 +59,10 @@
                                 <asp:MenuItem NavigateUrl="Forms_Directeur/Etat d'avancement.aspx" Text="Etat d'avancement" 
                                     Value="Etat d'avancement"></asp:MenuItem>
                                 <asp:MenuItem Text="Examen" Value="Examen">
-                                    <asp:MenuItem Text="Proposition " Value="Proposition " 
-                                        NavigateUrl="Forms_Directeur/Proposition.aspx"></asp:MenuItem>
-                                    <asp:MenuItem Text="Surveillance" Value="Surveillance" 
-                                        NavigateUrl="Forms_Directeur/Surveillance.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="EFMs " Value="EFMs " 
+                                        NavigateUrl="Forms_Directeur/EFMs.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Passage / Fin Formation" Value="Passage / Fin Formation" 
+                                        NavigateUrl="Forms_Directeur/Passage_Fin Formation.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Absence" Value="Absence">
                                     <asp:MenuItem NavigateUrl="Forms_Directeur/Demande d'autorisation d'absence.aspx" 
@@ -87,6 +87,57 @@
                                 </asp:MenuItem>
                             </Items>
                         </asp:Menu>
+
+
+                          <%-- <nav id="nav">
+            <ul id="menu">
+             <li>
+                    <asp:LinkButton ID="LinkButton6" Text="Formation" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Formation.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton3" Text="Filière" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Filière.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton4" Text="Module" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Module.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton1" Text="Formateur" runat="server"/></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton2" Text="Affectation des modules" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Affectation des modules aux formateurs.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton7" Text="Gestion des formateurs" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Gestion des formateurs.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton8" Text="Groupe" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Groupe.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton9" Text="Stagiaire" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Stagiaire.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton10" Text="Salle" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Salle.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton11" Text="Etat d'avancement" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Etat d'avancement.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton12" Text="Examen" runat="server" /></li>
+                <li>
+                  <asp:LinkButton ID="LinkButton13" Text="Proposition" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Proposition.aspx" /></li>
+                <li>
+                  <asp:LinkButton ID="LinkButton14" Text="Surveillance" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Surveillance.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton15" Text="Absence" runat="server" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton16" Text="Demande d'autorisation d'absence" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Demande d'autorisation d'absence.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton17" Text="Absences des formateurs" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Absence du formateur.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton18" Text="Les jours Fériés" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Jour Feries.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton19" Text="Réunion" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Réunion.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton20" Text="Club" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Club.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton21" Text="Gestion des entreprises" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Gestion des entreprises.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton22" Text="Delegations" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Delegation.aspx" /></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton5" Text="Année scolaire" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Annee Scolaire.aspx" /></li>
+
+            </ul>
+        </nav>--%>
                     </td>
                     <td class="style2">
                         <asp:ContentPlaceHolder ID = "ContentPlaceHolder_main" runat = "server">
@@ -95,7 +146,10 @@
                         
                         </td>
                     <td>
-                        Right Menu</td>
+
+
+
+                        </td>
                 </tr>
                
             </table>

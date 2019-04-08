@@ -37,5 +37,11 @@
                         </asp:GridView>
                     </td>
                 </tr>
+                <tr>
+                    <td class="style1">
+                        <asp:GridView ID="GridView_NoteStagiaire" runat="server" Width="785px">
+                        </asp:GridView>
+                    </td>
+                </tr>
                 </table>
 </asp:Content>

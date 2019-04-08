@@ -175,24 +175,6 @@ namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur {
         protected global::System.Web.UI.WebControls.TextBox TextBox_emeil;
         
         /// <summary>
-        /// Label9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
-        
-        /// <summary>
-        /// TextBox_motdepasse control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_motdepasse;
-        
-        /// <summary>
         /// Button_Ajouter control.
         /// </summary>
         /// <remarks>

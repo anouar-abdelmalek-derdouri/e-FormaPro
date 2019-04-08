@@ -84,11 +84,9 @@
             <td style="width: 155px; height: 92px;">
                 </td>
             <td style="width: 199px; height: 92px;">
-                <asp:Label ID="Label9" runat="server" Text="Mot de Passe :"></asp:Label>
-            </td>
+                &nbsp;</td>
             <td style="width: 129px; height: 92px;">
-                <asp:TextBox ID="TextBox_motdepasse" runat="server"></asp:TextBox>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td colspan="4" style="width: 155px; height: 23px;">

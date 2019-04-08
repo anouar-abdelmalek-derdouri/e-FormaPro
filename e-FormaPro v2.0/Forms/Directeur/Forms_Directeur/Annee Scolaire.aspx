@@ -6,19 +6,17 @@
                 <asp:Label ID="Label1" runat="server" Text="Année:"></asp:Label>
             </td>
             <td style="width: 221px">
-                <asp:TextBox ID="TextBox_Annee" runat="server" Width="207px"></asp:TextBox>
+                <asp:DropDownList ID="DropDownList_Annee" runat="server">
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
             <td style="width: 221px">
-                <asp:Button ID="Button_Ajouter" runat="server" Text="Ajouter" Width="188px" />
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td colspan ="2" style="width: 203px">
-                <asp:GridView ID="GridView_AnneeScolaire" runat="server" Width="367px">
-                </asp:GridView>
-            </td>
+                &nbsp;</td>
             
         </tr>
     </table>
