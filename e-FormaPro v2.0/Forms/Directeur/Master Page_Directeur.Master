@@ -4,39 +4,36 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <link href="Style_DirecteurMP/Style_MasterPage.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        .style1
-        {
-            width: 280px;
-        }
-        .style2
-        {
-            width: 846px;
-        }
-        .auto-style1 {
-            background-color: aqua;
-            height: 100%;
-            width: 164px;
-        }
-    </style>
+    <title> e-FormaPro v2.0</title>
+
+    <link href="../../css/Directeur_Style_MasterPage.css" rel="stylesheet" />
+
+   
 </head>
 <body>
     <form id="form1" runat="server">
    
-         <header class ="header">
-                      <center> <h1>WELCOME</h1> </center>
+         <header id="header">
+
+             <section id="compte">
+                 <asp:LinkButton Text="Profil Du Directeur" ID="LinkButton_ProfilDuCompte" runat="server" CssClass="compte-lien">
+                 </asp:LinkButton>
+                 <br />
+                 Bienvenue dans l&#39;espace <span class="espace">Directeur</span>
+             </section>
+
+             <section id="déconnexion">
+                 <asp:ImageButton ID="ImageButton_Déconnexion" runat="server" ImageUrl="~/img/Déconnexion.png"
+                     Width="20px" OnClick="ImageButton_Déconnexion_Click" />
+             </section>
 
          </header>
 
-
-            <table style="width:100%;">             
+            <table id="table_Master">             
                 <tr>
-                    <td style="height:100%;height: 100%;
-                                 display: inline-block;" >
+                    <td class="container_Menu" >
                         <asp:Menu ID="Menu_Achievers" StaticDisplayLevels ="2" runat="server">
-                            <StaticMenuItemStyle BorderColor ="Blue" BorderWidth="1.5px" BorderStyle="Solid" Font-Size="Medium" VerticalPadding="6px"/>
+                            <StaticMenuItemStyle  BorderColor ="Blue" BorderWidth="1.5px" BorderStyle="Solid" Font-Size="Medium" VerticalPadding="6px"/>
                          <StaticHoverStyle Font-Bold="true" />
                             <StaticSelectedStyle BackColor="Red" />
                             <Items>
@@ -139,27 +136,24 @@
             </ul>
         </nav>--%>
                     </td>
-                    <td class="style2">
-                        <asp:ContentPlaceHolder ID = "ContentPlaceHolder_main" runat = "server">
+                    <td class="ContentPlaceHolder" >
 
+                    <asp:ContentPlaceHolder ID = "ContentPlaceHolder_main" runat = "server">
                         </asp:ContentPlaceHolder>
                         
-                        </td>
-                    <td>
+                    </td>
 
-
-
-                        </td>
+                   
                 </tr>
                
             </table>
+         </form>
 
-
-         <footer class ="footer">
-                 <p>The Achievers, Copyright &copy; 2019</p>
-        </footer>
+         <footer id ="footer">
+                <center> <p>The Achievers, Copyright &copy; 2019</p> </center>
+         </footer>
         
 
-    </form>
+    <%--</form>--%>
 </body>
 </html>

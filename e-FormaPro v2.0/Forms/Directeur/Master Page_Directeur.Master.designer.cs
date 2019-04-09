@@ -22,6 +22,24 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// LinkButton_ProfilDuCompte control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton_ProfilDuCompte;
+        
+        /// <summary>
+        /// ImageButton_Déconnexion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton_Déconnexion;
+        
+        /// <summary>
         /// Menu_Achievers control.
         /// </summary>
         /// <remarks>

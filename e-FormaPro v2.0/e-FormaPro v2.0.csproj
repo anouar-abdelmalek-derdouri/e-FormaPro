@@ -81,7 +81,7 @@
     <Content Include="Forms\Directeur\Forms_Directeur\Salle.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx" />
-    <Content Include="Forms\Directeur\Style_DirecteurMP\Style_MasterPage.css" />
+    <Content Include="css\Directeur_Style_MasterPage.css" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\Activitées.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\CreationClub.aspx" />

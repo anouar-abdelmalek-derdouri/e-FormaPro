@@ -13,5 +13,11 @@ namespace e_FormaPro_v2._0.Forms.Directeur
         {
 
         }
+
+        protected void ImageButton_Déconnexion_Click(object sender, ImageClickEventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("~/Forms/Connexion.aspx");
+        }
     }
 }
