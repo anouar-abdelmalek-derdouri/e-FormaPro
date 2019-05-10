@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Consulter_LesProjets.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise.Consulter_LesProjets" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Consulter_Travaux.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Formateur.stage_Pr.Consulter_Travaux" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
 
     <div style="text-align: center">
     
-    &nbsp;Forme Encadrant: Boutton&nbsp;Consulter les Projets<br />
+        Forme Formateur : Botton&nbsp; Consulte et téléchargere les Projets<br />
+        <br />
         <asp:Label ID="Label1" runat="server" style="text-align: left" 
             Text="Rechercher Par :"></asp:Label>
         <br />
@@ -32,8 +33,6 @@
             <SortedDescendingHeaderStyle BackColor="#820000" />
         </asp:GridView>
         <br />
-        <br />
-        <br />
-    
+
     </div>
 </asp:Content>

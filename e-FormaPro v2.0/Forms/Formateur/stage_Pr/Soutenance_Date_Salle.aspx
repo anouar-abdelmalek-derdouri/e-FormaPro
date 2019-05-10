@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Soutenance_Date_Salle.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Formateur.stage_Pr" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Soutenance_Date_Salle.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Formateur.stage_Pr.Soutenance_Date_Salle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+
     <style type="text/css">
         #Label2,#Calendar1,#DropDownList1, #Label3
         {
@@ -74,4 +74,4 @@
         <br />
     
     </div>
-    </asp:Content>
+</asp:Content>

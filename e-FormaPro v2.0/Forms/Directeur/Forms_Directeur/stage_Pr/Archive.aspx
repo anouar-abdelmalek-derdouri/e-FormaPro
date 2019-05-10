@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Archive.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.stage_Pr" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Archive.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.stage_Pr.Archive" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+
     <div style="text-align: center">
     
         Forme Derectrice : Button Archive<br />
@@ -23,5 +23,4 @@
         <br />
     
     </div>
-    </asp:Content>
-    
+</asp:Content>

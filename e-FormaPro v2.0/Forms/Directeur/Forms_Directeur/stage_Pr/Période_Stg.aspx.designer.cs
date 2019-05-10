@@ -7,54 +7,72 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms.Entreprise {
+namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.stage_Pr {
     
     
-    public partial class Consulter_LesProjets {
+    public partial class Période_Stg {
         
         /// <summary>
-        /// Contrôle Label1.
+        /// Contrôle DropDownList1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// Contrôle RadioButton1NomPren.
+        /// Contrôle CheckBox1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1NomPren;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
         
         /// <summary>
-        /// Contrôle RadioButton1_Numero.
+        /// Contrôle DropDownList2.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1_Numero;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// Contrôle TextBox1_Recherch.
+        /// Contrôle TextBox_DatedebutN1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1_Recherch;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_DatedebutN1;
         
         /// <summary>
-        /// Contrôle GridView1.
+        /// Contrôle TextBox_DateFinN1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_DateFinN1;
+        
+        /// <summary>
+        /// Contrôle TextBox_DatedebutN2.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_DatedebutN2;
+        
+        /// <summary>
+        /// Contrôle TextBox_DateFinN2.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_DateFinN2;
     }
 }

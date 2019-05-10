@@ -39,7 +39,7 @@ namespace e_FormaPro_v2._0.Forms
             #endregion
 
 #warning A supprimer : Juste pour la démonstration
-            Session["compte"] = new Stagiaire() { Login = "120319990002", MotDePasse = "azerty", Nom = "alaoui", Prénom = "hassan" };
+            //Session["compte"] = new Stagiaire() { Login = "120319990002", MotDePasse = "azerty", Nom = "alaoui", Prénom = "hassan" };
             Response.Redirect("~/Forms/Exemple/Accueil.aspx");
 
             //The Achievers

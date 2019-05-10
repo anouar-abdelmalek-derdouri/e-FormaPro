@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Valider_Projet.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Stagiaire.stage_Pr" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Valider_Projet.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Stagiaire.stage_Pr.Valider_Projet" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+
     <style type="text/css">
         #Select1
         {
@@ -41,4 +41,4 @@
         <br />
     
     </div>
-    </asp:Content>
+</asp:Content>

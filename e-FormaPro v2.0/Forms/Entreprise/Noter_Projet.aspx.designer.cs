@@ -7,10 +7,10 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms {
+namespace e_FormaPro_v2._0.Forms.Entreprise {
     
     
-    public partial class Entreprise {
+    public partial class Noter_Projet {
         
         /// <summary>
         /// Contrôle Label_NomEncadr.

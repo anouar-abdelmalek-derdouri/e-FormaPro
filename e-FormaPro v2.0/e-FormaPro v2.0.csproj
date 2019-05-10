@@ -79,17 +79,17 @@
     <Content Include="Forms\Directeur\Forms_Directeur\EFMs.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Réunion.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Salle.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadre_Entreprise.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadrant_Entreprise.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Archive.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulte_Gps.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liee_Gps_Periode.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Periode_Stg.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenence.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulter_Gps.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liée_Gps_Période.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Période_Stg.aspx" />
+    <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenance.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx" />
     <Content Include="css\Directeur_Style_MasterPage.css" />
     <Content Include="Forms\Entreprise\Consulter_LesProjets.aspx" />
-    <Content Include="Forms\Entreprise\Infos_Presonnel.aspx" />
+    <Content Include="Forms\Entreprise\Infos_Presonnelle.aspx" />
     <Content Include="Forms\Entreprise\LesStagiaires.aspx" />
     <Content Include="Forms\Entreprise\Noter_Projet.aspx" />
     <Content Include="Forms\Exemple\Accueil.aspx" />
@@ -116,16 +116,16 @@
     <Content Include="Forms\Formateur\Icon_club\message_48px.png" />
     <Content Include="Forms\Formateur\Icon_club\report_card_48px.png" />
     <Content Include="Forms\Formateur\Icon_club\verified_account_48px.png" />
-    <Content Include="Forms\Formateur\stage_Pr\Consulter_Traveux.aspx" />
-    <Content Include="Forms\Formateur\stage_Pr\Consulte_Stgr_Equipe.aspx" />
-    <Content Include="Forms\Formateur\stage_Pr\Ficher_Soutenence.aspx" />
-    <Content Include="Forms\Formateur\stage_Pr\Noter_Soutenence.aspx" />
+    <Content Include="Forms\Formateur\stage_Pr\Consulter_Stgr_Equipe.aspx" />
+    <Content Include="Forms\Formateur\stage_Pr\Consulter_Travaux.aspx" />
+    <Content Include="Forms\Formateur\stage_Pr\Ficher_Soutenance.aspx" />
+    <Content Include="Forms\Formateur\stage_Pr\Noter_Soutenance.aspx" />
     <Content Include="Forms\Formateur\stage_Pr\Soutenance_Date_Salle.aspx" />
     <Content Include="Forms\Formateur\Style_Club\StyleSheet1.css" />
-    <Content Include="Forms\Stagiaire\stage_Pr\FormeeEquipe.aspx" />
-    <Content Include="Forms\Stagiaire\stage_Pr\InfosPerson.aspx" />
-    <Content Include="img\Table d%27appréciation.png" />
+    <Content Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx" />
+    <Content Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\Valider_Projet.aspx" />
+    <Content Include="img\Table d%27appréciation.png" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de transfert.aspx" />
@@ -279,12 +279,12 @@
     <Compile Include="Forms\Directeur\Forms_Directeur\Salle.aspx.designer.cs">
       <DependentUpon>Salle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadre_Entreprise.aspx.cs">
-      <DependentUpon>Ajouter_Encadre_Entreprise.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadrant_Entreprise.aspx.cs">
+      <DependentUpon>Ajouter_Encadrant_Entreprise.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadre_Entreprise.aspx.designer.cs">
-      <DependentUpon>Ajouter_Encadre_Entreprise.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadrant_Entreprise.aspx.designer.cs">
+      <DependentUpon>Ajouter_Encadrant_Entreprise.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Archive.aspx.cs">
       <DependentUpon>Archive.aspx</DependentUpon>
@@ -293,33 +293,33 @@
     <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Archive.aspx.designer.cs">
       <DependentUpon>Archive.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulte_Gps.aspx.cs">
-      <DependentUpon>Consulte_Gps.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulter_Gps.aspx.cs">
+      <DependentUpon>Consulter_Gps.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulte_Gps.aspx.designer.cs">
-      <DependentUpon>Consulte_Gps.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulter_Gps.aspx.designer.cs">
+      <DependentUpon>Consulter_Gps.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liee_Gps_Periode.aspx.cs">
-      <DependentUpon>Liee_Gps_Periode.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liée_Gps_Période.aspx.cs">
+      <DependentUpon>Liée_Gps_Période.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liee_Gps_Periode.aspx.designer.cs">
-      <DependentUpon>Liee_Gps_Periode.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liée_Gps_Période.aspx.designer.cs">
+      <DependentUpon>Liée_Gps_Période.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Periode_Stg.aspx.cs">
-      <DependentUpon>Periode_Stg.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Période_Stg.aspx.cs">
+      <DependentUpon>Période_Stg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Periode_Stg.aspx.designer.cs">
-      <DependentUpon>Periode_Stg.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Période_Stg.aspx.designer.cs">
+      <DependentUpon>Période_Stg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenence.aspx.cs">
-      <DependentUpon>Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenance.aspx.cs">
+      <DependentUpon>Soutenance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenence.aspx.designer.cs">
-      <DependentUpon>Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenance.aspx.designer.cs">
+      <DependentUpon>Soutenance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx.cs">
       <DependentUpon>Stagiaire.aspx</DependentUpon>
@@ -349,12 +349,12 @@
     <Compile Include="Forms\Entreprise\Consulter_LesProjets.aspx.designer.cs">
       <DependentUpon>Consulter_LesProjets.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Entreprise\Infos_Presonnel.aspx.cs">
-      <DependentUpon>Infos_Presonnel.aspx</DependentUpon>
+    <Compile Include="Forms\Entreprise\Infos_Presonnelle.aspx.cs">
+      <DependentUpon>Infos_Presonnelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Entreprise\Infos_Presonnel.aspx.designer.cs">
-      <DependentUpon>Infos_Presonnel.aspx</DependentUpon>
+    <Compile Include="Forms\Entreprise\Infos_Presonnelle.aspx.designer.cs">
+      <DependentUpon>Infos_Presonnelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Entreprise\LesStagiaires.aspx.cs">
       <DependentUpon>LesStagiaires.aspx</DependentUpon>
@@ -454,33 +454,33 @@
     <Compile Include="Forms\Formateur\Forms_Club\Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Traveux.aspx.cs">
-      <DependentUpon>Consulter_Traveux.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Stgr_Equipe.aspx.cs">
+      <DependentUpon>Consulter_Stgr_Equipe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Traveux.aspx.designer.cs">
-      <DependentUpon>Consulter_Traveux.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Stgr_Equipe.aspx.designer.cs">
+      <DependentUpon>Consulter_Stgr_Equipe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Consulte_Stgr_Equipe.aspx.cs">
-      <DependentUpon>Consulte_Stgr_Equipe.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Travaux.aspx.cs">
+      <DependentUpon>Consulter_Travaux.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Consulte_Stgr_Equipe.aspx.designer.cs">
-      <DependentUpon>Consulte_Stgr_Equipe.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Consulter_Travaux.aspx.designer.cs">
+      <DependentUpon>Consulter_Travaux.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Ficher_Soutenence.aspx.cs">
-      <DependentUpon>Ficher_Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Ficher_Soutenance.aspx.cs">
+      <DependentUpon>Ficher_Soutenance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Ficher_Soutenence.aspx.designer.cs">
-      <DependentUpon>Ficher_Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Ficher_Soutenance.aspx.designer.cs">
+      <DependentUpon>Ficher_Soutenance.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Noter_Soutenence.aspx.cs">
-      <DependentUpon>Noter_Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Noter_Soutenance.aspx.cs">
+      <DependentUpon>Noter_Soutenance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Formateur\stage_Pr\Noter_Soutenence.aspx.designer.cs">
-      <DependentUpon>Noter_Soutenence.aspx</DependentUpon>
+    <Compile Include="Forms\Formateur\stage_Pr\Noter_Soutenance.aspx.designer.cs">
+      <DependentUpon>Noter_Soutenance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Formateur\stage_Pr\Soutenance_Date_Salle.aspx.cs">
       <DependentUpon>Soutenance_Date_Salle.aspx</DependentUpon>
@@ -496,19 +496,19 @@
     <Compile Include="Forms\Master page.Master.designer.cs">
       <DependentUpon>Master page.Master</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Stagiaire\stage_Pr\FormeeEquipe.aspx.cs">
-      <DependentUpon>FormeeEquipe.aspx</DependentUpon>
+    <Compile Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx.cs">
+      <DependentUpon>Former_Equipe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Stagiaire\stage_Pr\FormeeEquipe.aspx.designer.cs">
-      <DependentUpon>FormeeEquipe.aspx</DependentUpon>
+    <Compile Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx.designer.cs">
+      <DependentUpon>Former_Equipe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Stagiaire\stage_Pr\InfosPerson.aspx.cs">
-      <DependentUpon>InfosPerson.aspx</DependentUpon>
+    <Compile Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx.cs">
+      <DependentUpon>InfosPersonnelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Stagiaire\stage_Pr\InfosPerson.aspx.designer.cs">
-      <DependentUpon>InfosPerson.aspx</DependentUpon>
+    <Compile Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx.designer.cs">
+      <DependentUpon>InfosPersonnelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Stagiaire\stage_Pr\Valider_Projet.aspx.cs">
       <DependentUpon>Valider_Projet.aspx</DependentUpon>

@@ -7,10 +7,10 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms.Formateur.stage_Pr {
+namespace e_FormaPro_v2._0.Forms.Stagiaire.stage_Pr {
     
     
-    public partial class Soutenance_Date_Salle {
+    public partial class InfosPersonnelle {
         
         /// <summary>
         /// Contrôle Label1.
@@ -22,40 +22,13 @@ namespace e_FormaPro_v2._0.Forms.Formateur.stage_Pr {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Contrôle RadioButton1NomPren.
+        /// Contrôle TextBox1_Numero.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1NomPren;
-        
-        /// <summary>
-        /// Contrôle RadioButton1_Numero.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1_Numero;
-        
-        /// <summary>
-        /// Contrôle TextBox1_Recherch.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1_Recherch;
-        
-        /// <summary>
-        /// Contrôle GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1_Numero;
         
         /// <summary>
         /// Contrôle Label2.
@@ -67,13 +40,13 @@ namespace e_FormaPro_v2._0.Forms.Formateur.stage_Pr {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Contrôle Calendar1.
+        /// Contrôle TextBox1_Nom.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1_Nom;
         
         /// <summary>
         /// Contrôle Label3.
@@ -85,21 +58,57 @@ namespace e_FormaPro_v2._0.Forms.Formateur.stage_Pr {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Contrôle DropDownList1.
+        /// Contrôle TextBox1_Prenom.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1_Prenom;
         
         /// <summary>
-        /// Contrôle Button1_Enregestr.
+        /// Contrôle Label4.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1_Enregestr;
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// Contrôle TextBox1_Telephone.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1_Telephone;
+        
+        /// <summary>
+        /// Contrôle Label5.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Contrôle TextBox1_Email.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1_Email;
+        
+        /// <summary>
+        /// Contrôle Button_Enregestre.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Enregestre;
     }
 }

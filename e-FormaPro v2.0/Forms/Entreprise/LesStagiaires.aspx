@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="LesStagiaires.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="LesStagiaires.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise.LesStagiaires" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+
     <div style="text-align: center">
     
         &nbsp;Forme Encadrant: Boutton&nbsp;Consulte les Stagiaires (Avec les Module Et note)<br />
@@ -41,4 +41,4 @@
         <br />
     
     </div>
-    </asp:Content>
+</asp:Content>

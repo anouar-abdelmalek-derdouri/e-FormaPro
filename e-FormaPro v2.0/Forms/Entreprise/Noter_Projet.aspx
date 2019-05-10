@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Noter_Projet.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Noter_Projet.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise.Noter_Projet" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+
     <style type="text/css">
     table,td
     { border:2px green solid;
@@ -49,7 +49,7 @@
                 </td>
             </tr>
         </table>
-        <asp:Image ID="Image1" runat="server" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/img/Table d'appréciation.png" />
         <br />
         <table style="width:100%">
             <tr>
@@ -293,4 +293,4 @@
         <br />
     
     </div>
-    </asp:Content>
+</asp:Content>

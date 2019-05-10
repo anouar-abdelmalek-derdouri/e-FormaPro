@@ -1,13 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Consulter_LesProjets.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Entreprise.Consulter_LesProjets" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Noter_Soutenance.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Formateur.stage_Pr.Noter_Soutenance" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
 
     <div style="text-align: center">
     
-    &nbsp;Forme Encadrant: Boutton&nbsp;Consulter les Projets<br />
+        Forme Formateur : Boutton&nbsp; Noter Les Projets<br />
+        <br />
         <asp:Label ID="Label1" runat="server" style="text-align: left" 
             Text="Rechercher Par :"></asp:Label>
         <br />
-        <asp:RadioButton ID="RadioButton1NomPren" runat="server" Text="Sujet" />
+        <asp:RadioButton ID="RadioButton1NomPren" runat="server" Text="Nom Ou Prénom" />
 &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:RadioButton ID="RadioButton1_Numero" runat="server" Text="Numero" />
 &nbsp;<br />
@@ -20,6 +21,7 @@
             <Columns>
                 <asp:HyperLinkField HeaderText="Code Source" Text="Telecherger" />
                 <asp:ButtonField HeaderText="Presentation" Text="Téléchérger" />
+                <asp:HyperLinkField HeaderText="Demarer Soutenences" Text=" Page Soutenece" />
             </Columns>
             <FooterStyle BackColor="#990000" ForeColor="White" Font-Bold="True" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
@@ -31,6 +33,9 @@
             <SortedDescendingCellStyle BackColor="#FCF6C0" />
             <SortedDescendingHeaderStyle BackColor="#820000" />
         </asp:GridView>
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
