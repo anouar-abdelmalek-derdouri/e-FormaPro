@@ -1,159 +1,252 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master Page_Directeur.master.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Master_Page_Directeur" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+        name='viewport'>
+    <!-- Bootstrap 3.3.4 -->
+    <%--    <link href="pro/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../css/pro/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <%--    <link href="pro/Style/AdminLTE.min.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../css/pro/Style/AdminLTE.min.css" rel="stylesheet" type="text/css" />
 
-<html>
-<head runat="server">
-    <title> e-FormaPro v2.0</title>
-
-    <link href="../../css/Directeur_Style_MasterPage.css" rel="stylesheet" />
-
-   
+    <%--    <link href="pro/Style/skin-blue.min.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../css/pro/Style/skin-blue.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
-   
-         <header id="header">
+<body class="skin-blue sidebar-mini">
+    <%--    <form id="form1" runat="server">--%>
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
 
-             <section id="compte">
-                 <asp:LinkButton Text="Profil Du Directeur" ID="LinkButton_ProfilDuCompte" runat="server" CssClass="compte-lien">
-                 </asp:LinkButton>
-                 <br />
-                 Bienvenue dans l&#39;espace <span class="espace">Directeur</span>
-             </section>
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>D</b>CT</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Directeur</b></span>
+            </a>
 
-             <section id="déconnexion">
-                 <asp:ImageButton ID="ImageButton_Déconnexion" runat="server" ImageUrl="~/img/Déconnexion.png"
-                     Width="20px" OnClick="ImageButton_Déconnexion_Click" />
-             </section>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
 
-         </header>
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
 
-            <table id="table_Master">             
-                <tr>
-                    <td class="container_Menu" >
-                        <asp:Menu ID="Menu_Achievers" StaticDisplayLevels ="2" runat="server">
-                            <StaticMenuItemStyle  BorderColor ="Blue" BorderWidth="1.5px" BorderStyle="Solid" Font-Size="Medium" VerticalPadding="6px"/>
-                         <StaticHoverStyle Font-Bold="true" />
-                            <StaticSelectedStyle BackColor="Red" />
-                            <Items>
-                                <asp:MenuItem NavigateUrl="Forms_Directeur/Formation.aspx" Text="Formation" Value="Formation">
-                                </asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="Forms_Directeur/Filière.aspx" Text="Filière" Value="Filière">
-                                </asp:MenuItem>
-                                <asp:MenuItem Text="Module" Value="Module" NavigateUrl="Forms_Directeur/Module.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Formateur" Value="Formateur">
-                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Affectation des modules aux formateurs.aspx" 
-                                        Text="Affectation des modules" Value="Affectation des modules">
-                                    </asp:MenuItem>
-                                    <asp:MenuItem Text="Gestion des formateurs" Value="Gestion des formateurs" 
-                                        NavigateUrl="Forms_Directeur/Gestion des formateurs.aspx">
-                                    </asp:MenuItem>
-                                </asp:MenuItem>
-                                <asp:MenuItem Text="Groupe" Value="Groupe" NavigateUrl="Forms_Directeur/Groupe.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Stagiaire" Value="Stagiaire" NavigateUrl="Forms_Directeur/Stagiaire.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Salle" Value="Salle" NavigateUrl="Forms_Directeur/Salle.aspx"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="Forms_Directeur/Etat d'avancement.aspx" Text="Etat d'avancement" 
-                                    Value="Etat d'avancement"></asp:MenuItem>
-                                <asp:MenuItem Text="Examen" Value="Examen">
-                                    <asp:MenuItem Text="EFMs " Value="EFMs " 
-                                        NavigateUrl="Forms_Directeur/EFMs.aspx"></asp:MenuItem>
-                                    <asp:MenuItem Text="Passage / Fin Formation" Value="Passage / Fin Formation" 
-                                        NavigateUrl="Forms_Directeur/Passage_Fin Formation.aspx"></asp:MenuItem>
-                                </asp:MenuItem>
-                                <asp:MenuItem Text="Absence" Value="Absence">
-                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Demande d'autorisation d'absence.aspx" 
-                                        Text="Demande d'autorisation d'absence" 
-                                        Value="Demande d'autorisation d'absence"></asp:MenuItem>
-                                    <asp:MenuItem NavigateUrl="Forms_Directeur/Absence du formateur.aspx" 
-                                        Text="Absences des formateurs" Value="Absences des formateurs">
-                                    </asp:MenuItem>
-                                </asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="Forms_Directeur/Jour Feries.aspx" Text="Les jours Fériés" 
-                                    Value="Les jours Fériés"></asp:MenuItem>
-                                <asp:MenuItem Text="Réunion" Value="Réunion" NavigateUrl="Forms_Directeur/Réunion.aspx"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="Forms_Directeur/Club.aspx" Text="Club" Value="Club"></asp:MenuItem>
-                                <asp:MenuItem Text="Gestion des entreprises" Value="Gestion des entreprises" 
-                                    NavigateUrl="Forms_Directeur/Gestion des entreprises.aspx">
-                                </asp:MenuItem>
-                                <asp:MenuItem Text="Année Scolaire" Value="Année Scolaire" 
-                                    NavigateUrl="Forms_Directeur/Annee Scolaire.aspx">
-                                </asp:MenuItem>
-                                <asp:MenuItem Text="Delegation" Value="Delegation" 
-                                    NavigateUrl="Forms_Directeur/Delegation.aspx">
-                                </asp:MenuItem>
-                            </Items>
-                        </asp:Menu>
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    </div>
+                    <div class="pull-left info">
+                        <p>Directeur</p>
+                        <!-- Status -->
+                        <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                    </div>
+                </div>
 
+                <!-- search form (Optional) -->
 
-                          <%-- <nav id="nav">
-            <ul id="menu">
-             <li>
-                    <asp:LinkButton ID="LinkButton6" Text="Formation" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Formation.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton3" Text="Filière" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Filière.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton4" Text="Module" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Module.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton1" Text="Formateur" runat="server"/></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton2" Text="Affectation des modules" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Affectation des modules aux formateurs.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton7" Text="Gestion des formateurs" runat="server" PostBackUrl="~/Forms/Directeur/Forms_Directeur/Gestion des formateurs.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton8" Text="Groupe" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Groupe.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton9" Text="Stagiaire" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Stagiaire.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton10" Text="Salle" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Salle.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton11" Text="Etat d'avancement" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Etat d'avancement.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton12" Text="Examen" runat="server" /></li>
-                <li>
-                  <asp:LinkButton ID="LinkButton13" Text="Proposition" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Proposition.aspx" /></li>
-                <li>
-                  <asp:LinkButton ID="LinkButton14" Text="Surveillance" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Surveillance.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton15" Text="Absence" runat="server" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton16" Text="Demande d'autorisation d'absence" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Demande d'autorisation d'absence.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton17" Text="Absences des formateurs" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Absence du formateur.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton18" Text="Les jours Fériés" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Jour Feries.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton19" Text="Réunion" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Réunion.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton20" Text="Club" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Club.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton21" Text="Gestion des entreprises" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Gestion des entreprises.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton22" Text="Delegations" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Delegation.aspx" /></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton5" Text="Année scolaire" runat="server"  PostBackUrl="~/Forms/Directeur/Forms_Directeur/Annee Scolaire.aspx" /></li>
+                <!-- /.search form -->
 
-            </ul>
-        </nav>--%>
-                    </td>
-                    <td class="ContentPlaceHolder" >
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <li class="header">MENU</li>
+                    <!-- Optionally, you can add icons to the links -->
 
-                    <asp:ContentPlaceHolder ID = "ContentPlaceHolder_main" runat = "server">
-                        </asp:ContentPlaceHolder>
-                        
-                    </td>
+                    <li class="active"><a href="Formation.aspx"><i class='fa fa-link'></i><span>Formation</span></a></li>
+                    <li><a href="Filière.aspx"><i class='fa fa-link'></i><span>Filière</span></a></li>
 
-                   
-                </tr>
-               
-            </table>
-         </form>
+                     <li class="treeview">
+                        <a href="#"><i class='fa fa-link'></i><span>Formateur</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="Absence.aspx">Absence</a></li>
+                            <li><a href="Affectation.aspx">Affectation</a></li>
+                        </ul>
+                    </li>
 
-         <footer id ="footer">
-                <center> <p>The Achievers, Copyright &copy; 2019</p> </center>
-         </footer>
+                    <li class="active"><a href="Groupe.aspx"><i class='fa fa-link'></i><span>Les Groupe</span></a></li>
+                    <li><a href="Stagiaire.aspx"><i class='fa fa-link'></i><span>Les Stagiaire</span></a></li>
+                    <li><a href="Salle.aspx"><i class='fa fa-link'></i><span>Les Salles</span></a></li>
+                    <li><a href="Etat d'avancement.aspx"><i class='fa fa-link'></i><span>Etat d'avancement</span></a></li>
+                    
+                     <li class="treeview">
+                        <a href="#"><i class='fa fa-link'></i><span>Examen</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">Proposition</a></li>
+                            <li><a href="Affectation.aspx">Surveillance</a></li>
+                        </ul>
+                    </li>
+
+                     <li class="treeview">
+                        <a href="#"><i class='fa fa-link'></i><span>Absence</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">Demande d'autorisation d'absence</a></li>
+                            <li><a href="#">Absences des formateurs</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="Jour Feries.aspx"><i class='fa fa-link'></i><span>Les jours Fériés</span></a></li>
+                    <li><a href="Réunion.aspx"><i class='fa fa-link'></i><span>Réunion</span></a></li>
+                    <li><a href="Club.aspx"><i class='fa fa-link'></i><span>Club</span></a></li>
+                    <li><a href="Gestion des entreprises.aspx"><i class='fa fa-link'></i><span>Gestion des entreprises</span></a></li>
+                    <li><a href="Delegation.aspx"><i class='fa fa-link'></i><span>Delegations</span></a></li>
+                    <li><a href="Annee Scolaire.aspx"><i class='fa fa-link'></i><span>Année scolaire</span></a></li>
         
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>Page Header
+                    <small>Optional description</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i>Level</a></li>
+                    <li class="active">Here</li>
+                </ol>
+            </section>
+            <!-- Main content -->
+            <section class="content">
 
-    <%--</form>--%>
+
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder_main" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
+                Anything you want
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2019 <a href="#">The Achievers </a>.</strong> All rights reserved.
+        </footer>
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane active" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading">Recent Activity</h3>
+                    <ul class='control-sidebar-menu'>
+                        <li>
+                            <a href='javascript::;'>
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                                    <p>Will be 23 on April 24th</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+
+                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                    <ul class='control-sidebar-menu'>
+                        <li>
+                            <a href='javascript::;'>
+                                <h4 class="control-sidebar-subheading">Custom Template Design
+                                    <span class="label label-danger pull-right">70%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+
+                </div>
+                <!-- /.tab-pane -->
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                <!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                    <form method="post">
+                        <h3 class="control-sidebar-heading">General Settings</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Report panel usage
+                                <input type="checkbox" class="pull-right" />
+                            </label>
+                            <p>
+                                Some information about this general settings option
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                    </form>
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+        <div class='control-sidebar-bg'>
+        </div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 2.1.4 -->
+    <%--<script src="pro/script/jQuery-2.1.4.min.js"></script>--%>
+    <script src="../../css/pro/script/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <%--    <script src="pro/script//bootstrap.min.js" type="text/javascript"></script>--%>
+    <script src="../../css/pro/script/bootstrap.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <%--    <script src="pro/script/app.min.js" type="text/javascript"></script>--%>
+    <script src="../../css/pro/script/app.min.js" type="text/javascript"></script>
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+          Both of these plugins are recommended to enhance the
+          user experience. Slimscroll is required when using the
+          fixed layout. -->
+    <%--    </form>--%>
 </body>
 </html>

@@ -10,42 +10,42 @@
 namespace e_FormaPro_v2._0.Forms.Directeur {
     
     
-    public partial class Master_Page_Directeur {
+    public partial class Demande_d_autorisation_d_absence {
         
         /// <summary>
-        /// Head1 control.
+        /// bsence control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        protected global::System.Web.UI.WebControls.GridView bsence;
         
         /// <summary>
-        /// head control.
+        /// Button_Confirmer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Button Button_Confirmer;
         
         /// <summary>
-        /// form1 control.
+        /// Button_Refuser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button Button_Refuser;
         
         /// <summary>
-        /// ContentPlaceHolder_main control.
+        /// bsence0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder_main;
+        protected global::System.Web.UI.WebControls.GridView bsence0;
     }
 }

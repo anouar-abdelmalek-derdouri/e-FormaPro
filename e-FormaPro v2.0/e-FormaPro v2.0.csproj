@@ -62,32 +62,32 @@
     <Content Include="css\global.css" />
     <Content Include="css\master.css" />
     <Content Include="Forms\Connexion.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Absence du formateur.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Affectation des modules aux formateurs.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Club.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Delegation.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Demande d%27autorisation d%27absence.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Etat d%27avancement.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Filière.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Formation.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Gestion des entreprises.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Gestion des formateurs.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Groupe.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Jour Feries.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Module.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\EFMs.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Réunion.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Salle.aspx" />
+    <Content Include="Forms\Directeur\Absence.aspx" />
+    <Content Include="Forms\Directeur\Affectation.aspx" />
+    <Content Include="Forms\Directeur\Annee Scolaire.aspx" />
+    <Content Include="Forms\Directeur\Club.aspx" />
+    <Content Include="Forms\Directeur\Delegation.aspx" />
+    <Content Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx" />
+    <Content Include="Forms\Directeur\EFMs.aspx" />
+    <Content Include="Forms\Directeur\Etat d%27avancement.aspx" />
+    <Content Include="Forms\Directeur\Filière.aspx" />
+    <Content Include="Forms\Directeur\Formation.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadrant_Entreprise.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Archive.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Consulter_Gps.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Liée_Gps_Période.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Période_Stg.aspx" />
     <Content Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenance.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx" />
-    <Content Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx" />
     <Content Include="css\Directeur_Style_MasterPage.css" />
+    <Content Include="Forms\Directeur\Gestion des entreprises.aspx" />
+    <Content Include="Forms\Directeur\Gestion des formateurs.aspx" />
+    <Content Include="Forms\Directeur\Groupe.aspx" />
+    <Content Include="Forms\Directeur\Jour Feries.aspx" />
+    <Content Include="Forms\Directeur\Les salles.aspx" />
+    <Content Include="Forms\Directeur\Module.aspx" />
+    <Content Include="Forms\Directeur\Passage_Fin Formation.aspx" />
+    <Content Include="Forms\Directeur\Réunion.aspx" />
+    <Content Include="Forms\Directeur\Stagiaire.aspx" />
     <Content Include="Forms\Entreprise\Consulter_LesProjets.aspx" />
     <Content Include="Forms\Entreprise\Infos_Presonnelle.aspx" />
     <Content Include="Forms\Entreprise\LesStagiaires.aspx" />
@@ -160,124 +160,75 @@
     <Compile Include="Forms\Connexion.aspx.designer.cs">
       <DependentUpon>Connexion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Absence du formateur.aspx.cs">
-      <DependentUpon>Absence du formateur.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Absence.aspx.cs">
+      <DependentUpon>Absence.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Absence du formateur.aspx.designer.cs">
-      <DependentUpon>Absence du formateur.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Absence.aspx.designer.cs">
+      <DependentUpon>Absence.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Affectation des modules aux formateurs.aspx.cs">
-      <DependentUpon>Affectation des modules aux formateurs.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Affectation.aspx.cs">
+      <DependentUpon>Affectation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Affectation des modules aux formateurs.aspx.designer.cs">
-      <DependentUpon>Affectation des modules aux formateurs.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Affectation.aspx.designer.cs">
+      <DependentUpon>Affectation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx.cs">
+    <Compile Include="Forms\Directeur\Annee Scolaire.aspx.cs">
       <DependentUpon>Annee Scolaire.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Annee Scolaire.aspx.designer.cs">
+    <Compile Include="Forms\Directeur\Annee Scolaire.aspx.designer.cs">
       <DependentUpon>Annee Scolaire.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Club.aspx.cs">
+    <Compile Include="Forms\Directeur\Club.aspx.cs">
       <DependentUpon>Club.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Club.aspx.designer.cs">
+    <Compile Include="Forms\Directeur\Club.aspx.designer.cs">
       <DependentUpon>Club.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Delegation.aspx.cs">
+    <Compile Include="Forms\Directeur\Delegation.aspx.cs">
       <DependentUpon>Delegation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Delegation.aspx.designer.cs">
+    <Compile Include="Forms\Directeur\Delegation.aspx.designer.cs">
       <DependentUpon>Delegation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Demande d%27autorisation d%27absence.aspx.cs">
+    <Compile Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx.cs">
       <DependentUpon>Demande d%27autorisation d%27absence.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Demande d%27autorisation d%27absence.aspx.designer.cs">
+    <Compile Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx.designer.cs">
       <DependentUpon>Demande d%27autorisation d%27absence.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Etat d%27avancement.aspx.cs">
-      <DependentUpon>Etat d%27avancement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Etat d%27avancement.aspx.designer.cs">
-      <DependentUpon>Etat d%27avancement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Filière.aspx.cs">
-      <DependentUpon>Filière.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Filière.aspx.designer.cs">
-      <DependentUpon>Filière.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Formation.aspx.cs">
-      <DependentUpon>Formation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Formation.aspx.designer.cs">
-      <DependentUpon>Formation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Gestion des entreprises.aspx.cs">
-      <DependentUpon>Gestion des entreprises.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Gestion des entreprises.aspx.designer.cs">
-      <DependentUpon>Gestion des entreprises.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Gestion des formateurs.aspx.cs">
-      <DependentUpon>Gestion des formateurs.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Gestion des formateurs.aspx.designer.cs">
-      <DependentUpon>Gestion des formateurs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Groupe.aspx.cs">
-      <DependentUpon>Groupe.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Groupe.aspx.designer.cs">
-      <DependentUpon>Groupe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Jour Feries.aspx.cs">
-      <DependentUpon>Jour Feries.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Jour Feries.aspx.designer.cs">
-      <DependentUpon>Jour Feries.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Module.aspx.cs">
-      <DependentUpon>Module.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Module.aspx.designer.cs">
-      <DependentUpon>Module.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\EFMs.aspx.cs">
+    <Compile Include="Forms\Directeur\EFMs.aspx.cs">
       <DependentUpon>EFMs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\EFMs.aspx.designer.cs">
+    <Compile Include="Forms\Directeur\EFMs.aspx.designer.cs">
       <DependentUpon>EFMs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Réunion.aspx.cs">
-      <DependentUpon>Réunion.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Etat d%27avancement.aspx.cs">
+      <DependentUpon>Etat d%27avancement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Réunion.aspx.designer.cs">
-      <DependentUpon>Réunion.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Etat d%27avancement.aspx.designer.cs">
+      <DependentUpon>Etat d%27avancement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Salle.aspx.cs">
-      <DependentUpon>Salle.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Filière.aspx.cs">
+      <DependentUpon>Filière.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Salle.aspx.designer.cs">
-      <DependentUpon>Salle.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Filière.aspx.designer.cs">
+      <DependentUpon>Filière.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Formation.aspx.cs">
+      <DependentUpon>Formation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Formation.aspx.designer.cs">
+      <DependentUpon>Formation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Ajouter_Encadrant_Entreprise.aspx.cs">
       <DependentUpon>Ajouter_Encadrant_Entreprise.aspx</DependentUpon>
@@ -321,19 +272,40 @@
     <Compile Include="Forms\Directeur\Forms_Directeur\stage_Pr\Soutenance.aspx.designer.cs">
       <DependentUpon>Soutenance.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx.cs">
-      <DependentUpon>Stagiaire.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Gestion des entreprises.aspx.cs">
+      <DependentUpon>Gestion des entreprises.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Stagiaire.aspx.designer.cs">
-      <DependentUpon>Stagiaire.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Gestion des entreprises.aspx.designer.cs">
+      <DependentUpon>Gestion des entreprises.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx.cs">
-      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Gestion des formateurs.aspx.cs">
+      <DependentUpon>Gestion des formateurs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Forms_Directeur\Passage_Fin Formation.aspx.designer.cs">
-      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\Gestion des formateurs.aspx.designer.cs">
+      <DependentUpon>Gestion des formateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Groupe.aspx.cs">
+      <DependentUpon>Groupe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Groupe.aspx.designer.cs">
+      <DependentUpon>Groupe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Jour Feries.aspx.cs">
+      <DependentUpon>Jour Feries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Jour Feries.aspx.designer.cs">
+      <DependentUpon>Jour Feries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Les salles.aspx.cs">
+      <DependentUpon>Les salles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Les salles.aspx.designer.cs">
+      <DependentUpon>Les salles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Master Page_Directeur.Master.cs">
       <DependentUpon>Master Page_Directeur.Master</DependentUpon>
@@ -341,6 +313,34 @@
     </Compile>
     <Compile Include="Forms\Directeur\Master Page_Directeur.Master.designer.cs">
       <DependentUpon>Master Page_Directeur.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Module.aspx.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Module.aspx.designer.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Passage_Fin Formation.aspx.cs">
+      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Passage_Fin Formation.aspx.designer.cs">
+      <DependentUpon>Passage_Fin Formation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Réunion.aspx.cs">
+      <DependentUpon>Réunion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Réunion.aspx.designer.cs">
+      <DependentUpon>Réunion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Stagiaire.aspx.cs">
+      <DependentUpon>Stagiaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Stagiaire.aspx.designer.cs">
+      <DependentUpon>Stagiaire.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Entreprise\Consulter_LesProjets.aspx.cs">
       <DependentUpon>Consulter_LesProjets.aspx</DependentUpon>
@@ -607,7 +607,9 @@
   <ItemGroup>
     <Content Include="Forms\Master page.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\Directeur\Forms_Directeur\Forms_Espa_Directeur\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\Directeur\Master Page_Directeur.Master" />
   </ItemGroup>

@@ -10,42 +10,42 @@
 namespace e_FormaPro_v2._0.Forms.Directeur {
     
     
-    public partial class Master_Page_Directeur {
+    public partial class Groupe {
         
         /// <summary>
-        /// Head1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// head control.
+        /// DropDownList_Groupe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Groupe;
         
         /// <summary>
-        /// form1 control.
+        /// Button_Rechercher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button Button_Rechercher;
         
         /// <summary>
-        /// ContentPlaceHolder_main control.
+        /// GridView_Groupe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder_main;
+        protected global::System.Web.UI.WebControls.GridView GridView_Groupe;
     }
 }
