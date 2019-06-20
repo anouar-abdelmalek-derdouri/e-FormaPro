@@ -69,6 +69,12 @@
     <Content Include="Forms\Directeur\Delegation.aspx" />
     <Content Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Directeur\EFMs.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Configurations.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Formateurs.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Groupes.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Modification.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Rattrapage.aspx" />
+    <Content Include="Forms\Directeur\Emploi\Salles.aspx" />
     <Content Include="Forms\Directeur\Etat d%27avancement.aspx" />
     <Content Include="Forms\Directeur\Filière.aspx" />
     <Content Include="Forms\Directeur\Formation.aspx" />
@@ -208,6 +214,55 @@
     </Compile>
     <Compile Include="Forms\Directeur\EFMs.aspx.designer.cs">
       <DependentUpon>EFMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Configurations.aspx.cs">
+      <DependentUpon>Configurations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Configurations.aspx.designer.cs">
+      <DependentUpon>Configurations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\EmploiNestedMasterPage.master.cs">
+      <DependentUpon>EmploiNestedMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\EmploiNestedMasterPage.master.designer.cs">
+      <DependentUpon>EmploiNestedMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Formateurs.aspx.cs">
+      <DependentUpon>Formateurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Formateurs.aspx.designer.cs">
+      <DependentUpon>Formateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Groupes.aspx.cs">
+      <DependentUpon>Groupes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Groupes.aspx.designer.cs">
+      <DependentUpon>Groupes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Modification.aspx.cs">
+      <DependentUpon>Modification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Modification.aspx.designer.cs">
+      <DependentUpon>Modification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Rattrapage.aspx.cs">
+      <DependentUpon>Rattrapage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Rattrapage.aspx.designer.cs">
+      <DependentUpon>Rattrapage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Salles.aspx.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Emploi\Salles.aspx.designer.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Etat d%27avancement.aspx.cs">
       <DependentUpon>Etat d%27avancement.aspx</DependentUpon>
@@ -620,6 +675,7 @@
     <Content Include="Forms\Formateur\Forms_Club\Site1.Master" />
     <Content Include="Forms\Formateur\Forms_Club\Site2.Master" />
     <Content Include="Forms\Formateur\Forms_Club\Web.config" />
+    <Content Include="Forms\Directeur\Emploi\EmploiNestedMasterPage.master" />
     <None Include="Forms\Formateur\Forms_Club\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

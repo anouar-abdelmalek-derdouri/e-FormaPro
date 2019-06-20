@@ -1,0 +1,3 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="EmploiNestedMasterPage.master.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.Emploi.EmploiNestedMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
+</asp:Content>
