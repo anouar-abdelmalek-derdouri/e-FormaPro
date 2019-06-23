@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Accueil" Language="C#" MasterPageFile="~/Forms/Formateur/Forms_Club/Site1.Master" AutoEventWireup="false"
-    CodeBehind="~/Forms/Formateur/Forms_Club/defaultpage.aspx.cs" Inherits="Projet.defaultpage" %>
+﻿<%@ Page Title="Accueil" Language="C#" MasterPageFile="~/Forms/Club/Site1.Master" AutoEventWireup="false"
+    CodeBehind="~/Forms/Club/defaultpage.aspx.cs" Inherits="Projet.defaultpage" %>
 
 <asp:Content ID="HeaderContentdefaultpage" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
@@ -15,6 +15,18 @@
         (Nom et prénom de président)
     </p>
     <br />
+    <h2>
+        Les demandes :
+    </h2>
+    <br />
+    <p>
+    click ici pour voir votre demandes : <asp:ImageButton ID="ImageButton_les_demende" runat="server"
+                                            Height="28px" ImageUrl="~/img/icon_club/message_48px.png"
+                                            Width="34px" OnClick="ImageButton_les_demende_Click" />
+    </p>
+
+    <br />
+    
     <h2>
         Les evennements
     </h2>
