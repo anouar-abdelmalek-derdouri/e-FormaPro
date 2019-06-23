@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/Forms/Club/Site2.Master.cs" Inherits="Projet.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Style_Club/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Ecpace Club
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                        <asp:ImageButton ID="ImageButton_raport" runat="server" 
+                    Height="44px" ImageUrl="~/img/Icon_club/report_card_48px.png"
+                            Width="51px" onclick="ImageButton_raport_Click" />
+                            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu1" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Vertical">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Forms/Formateur/Forms_Club/Listclub.aspx" Text="List des club" />
+                        <asp:MenuItem NavigateUrl="~/Forms/Formateur/Forms_Club/CreationClub.aspx" Text="Creation d'un club" />
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>
