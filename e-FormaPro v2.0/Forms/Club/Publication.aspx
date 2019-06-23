@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Publication" Language="C#" MasterPageFile="~/Forms/Formateur/Forms_Club/Site1.Master" AutoEventWireup="false"
-    CodeBehind="~/Forms/Formateur/Forms_Club/Publication.aspx.cs" Inherits="Projet.Publication" %>
+﻿<%@ Page Title="Publication" Language="C#" MasterPageFile="~/Forms/Club/Site1.Master" AutoEventWireup="false"
+    CodeBehind="~/Forms/Club/Publication.aspx.cs" Inherits="Projet.Publication" %>
 
 <asp:Content ID="HeaderContentPublication" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

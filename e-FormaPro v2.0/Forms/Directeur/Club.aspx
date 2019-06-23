@@ -11,7 +11,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
-
+    <h2>Crée un nouvaux club :</h2>
      <table>
         <tr>
             <td class="style1">
@@ -69,6 +69,13 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
+     <br />
+     <br />
+     <br />
+     <h2>Raport :</h2>
+     <asp:ImageButton ID="ImageButton_download_raport" runat="server" Height="62px" ImageUrl="~/img/Icon_club/download_,100px.png" Width="79px" />
+     <br />
+     <asp:Label ID="Label5" runat="server" Text="Click to download"></asp:Label>
     <br />
 
 </asp:Content>
