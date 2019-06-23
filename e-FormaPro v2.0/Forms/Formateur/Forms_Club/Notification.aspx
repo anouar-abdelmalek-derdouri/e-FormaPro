@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Notification" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Notification" Language="C#" MasterPageFile="~/Forms/Formateur/Forms_Club/Site1.Master" AutoEventWireup="false"
     CodeBehind="~/Notification.aspx.cs" Inherits="Projet.Notification" %>
 
 <asp:Content ID="HeaderContentNotification" runat="server" ContentPlaceHolderID="HeadContent">

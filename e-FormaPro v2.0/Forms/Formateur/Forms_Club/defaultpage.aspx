@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Accueil" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Accueil" Language="C#" MasterPageFile="~/Forms/Formateur/Forms_Club/Site1.Master" AutoEventWireup="false"
     CodeBehind="~/defaultpage.aspx.cs" Inherits="Projet.defaultpage" %>
 
 <asp:Content ID="HeaderContentdefaultpage" runat="server" ContentPlaceHolderID="HeadContent">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Demandes d'appartenance" Language="C#" MasterPageFile="~/Site1.Master"
+﻿<%@ Page Title="Demandes d'appartenance" Language="C#" MasterPageFile="~/Forms/Formateur/Forms_Club/Site1.Master"
     AutoEventWireup="false" CodeBehind="~/Demandes.aspx.cs" Inherits="Projet.Demandes" %>
 
 <asp:Content ID="HeaderContentDemandes" runat="server" ContentPlaceHolderID="HeadContent">
