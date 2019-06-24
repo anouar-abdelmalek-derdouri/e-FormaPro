@@ -11,8 +11,8 @@
          <h2>
         Liste des clubs :
     </h2>
-    <asp:Button ID="Button_afiche" runat="server" Text="afficher" 
-        onclick="Button_afiche_Click" />
+       <%-- <asp:Button ID="Button_afiche" runat="server" Text="afficher"
+            OnClick="Button_afiche_Click" />--%>
     
     <p>
         <asp:ListView ID="ListViewpub" runat="server" DataKeyNames="NomClub" DataSourceID="SqlDataSource1" GroupItemCount="3">

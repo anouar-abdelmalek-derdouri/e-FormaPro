@@ -67,6 +67,13 @@
     <Content Include="css\connexion.css" />
     <Content Include="css\global.css" />
     <Content Include="css\master.css" />
+    <Content Include="Forms\Club\Activitées.aspx" />
+    <Content Include="Forms\Club\defaultpage.aspx" />
+    <Content Include="Forms\Club\Demandes.aspx" />
+    <Content Include="Forms\Club\listclubs.aspx" />
+    <Content Include="Forms\Club\Notification.aspx" />
+    <Content Include="Forms\Club\Planification.aspx" />
+    <Content Include="Forms\Club\Publication.aspx" />
     <Content Include="Forms\Connexion.aspx" />
     <Content Include="Forms\Directeur\Absence.aspx" />
     <Content Include="Forms\Directeur\Accueil.aspx" />
@@ -136,6 +143,27 @@
     <Content Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\Valider_Projet.aspx" />
+    <Content Include="Global1.asax" />
+    <Content Include="img\Icon_club\1.jpg" />
+    <Content Include="img\Icon_club\2.jpg" />
+    <Content Include="img\Icon_club\3.jpg" />
+    <Content Include="img\Icon_club\4.jpg" />
+    <Content Include="img\Icon_club\5.jpg" />
+    <Content Include="img\Icon_club\add_userg.png" />
+    <Content Include="img\Icon_club\add_user_group_man_man_32px.png" />
+    <Content Include="img\Icon_club\appointment_reminders_48px.png" />
+    <Content Include="img\Icon_club\chevron_left_48px.png" />
+    <Content Include="img\Icon_club\chevron_right_48px.png" />
+    <Content Include="img\Icon_club\deleted_message_48px.png" />
+    <Content Include="img\Icon_club\downloading_updates_100px.png" />
+    <Content Include="img\Icon_club\downloads_foldelr_100px.png" />
+    <Content Include="img\Icon_club\download_,100px.png" />
+    <Content Include="img\Icon_club\download_100px.png" />
+    <Content Include="img\Icon_club\edit_user.png" />
+    <Content Include="img\Icon_club\message_48px.png" />
+    <Content Include="img\Icon_club\remove_user.png" />
+    <Content Include="img\Icon_club\report_card_48px.png" />
+    <Content Include="img\Icon_club\verified_account_48px.png" />
     <Content Include="img\Table d%27appréciation.png" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx" />
@@ -157,6 +185,18 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Class_Club\Activitées.cs" />
+    <Compile Include="Classes\Class_Club\Appartenance.cs" />
+    <Compile Include="Classes\Class_Club\Appartian.cs" />
+    <Compile Include="Classes\Class_Club\Clubs.cs" />
+    <Compile Include="Classes\Class_Club\Demande appartenance.cs" />
+    <Compile Include="Classes\Class_Club\Demande de creation.cs" />
+    <Compile Include="Classes\Class_Club\Etat Demande.cs" />
+    <Compile Include="Classes\Class_Club\Participants.cs" />
+    <Compile Include="Classes\Class_Club\Planifications.cs" />
+    <Compile Include="Classes\Class_Club\Publications.cs" />
+    <Compile Include="Classes\Class_Club\Ressources.cs" />
+    <Compile Include="Classes\Class_Club\TypeActivitée.cs" />
     <Compile Include="Classes\Compte.cs" />
     <Compile Include="Classes\Encadrant.cs" />
     <Compile Include="Classes\Entreprise.cs" />
@@ -164,6 +204,55 @@
     <Compile Include="Classes\Directeur.cs" />
     <Compile Include="Classes\Formateur.cs" />
     <Compile Include="Classes\Stagiaire.cs" />
+    <Compile Include="Forms\Club\Activitées.aspx.cs">
+      <DependentUpon>Activitées.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Activitées.aspx.designer.cs">
+      <DependentUpon>Activitées.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\defaultpage.aspx.cs">
+      <DependentUpon>defaultpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\defaultpage.aspx.designer.cs">
+      <DependentUpon>defaultpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\Demandes.aspx.cs">
+      <DependentUpon>Demandes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Demandes.aspx.designer.cs">
+      <DependentUpon>Demandes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\Notification.aspx.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Notification.aspx.designer.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\Planification.aspx.cs">
+      <DependentUpon>Planification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Planification.aspx.designer.cs">
+      <DependentUpon>Planification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\Publication.aspx.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Publication.aspx.designer.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Connexion.aspx.cs">
       <DependentUpon>Connexion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -651,6 +740,17 @@
     <Compile Include="Managers\EncadrantsManager.cs" />
     <Compile Include="Managers\EntreprisesManager.cs" />
     <Compile Include="Managers\FormateursManager.cs" />
+    <Compile Include="Managers\Manager_Club\ActivitéeManager.cs" />
+    <Compile Include="Managers\Manager_Club\AppartienManager.cs" />
+    <Compile Include="Managers\Manager_Club\ClubManager.cs" />
+    <Compile Include="Managers\Manager_Club\DMManager.cs" />
+    <Compile Include="Managers\Manager_Club\FormateurManager.cs" />
+    <Compile Include="Managers\Manager_Club\ParticipantsManager.cs" />
+    <Compile Include="Managers\Manager_Club\PlanificationManager.cs" />
+    <Compile Include="Managers\Manager_Club\PraticipantManger.cs" />
+    <Compile Include="Managers\Manager_Club\PublucationManager.cs" />
+    <Compile Include="Managers\Manager_Club\RessourcesManager.cs" />
+    <Compile Include="Managers\Manager_Club\StagiaireManager.cs" />
     <Compile Include="Managers\SurveillantsManager.cs" />
     <Compile Include="Managers\DirecteursManager.cs" />
     <Compile Include="Managers\StagiairesManager.cs" />
@@ -661,7 +761,9 @@
     <Content Include="Forms\Master page.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\" />
     <Folder Include="Forms\Directeur\Forms_Directeur\Forms_Espa_Directeur\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\Directeur\Master Page_Directeur.Master" />
@@ -674,12 +776,18 @@
     <Content Include="Forms\Formateur\Forms_Club\Site2.Master" />
     <Content Include="Forms\Formateur\Forms_Club\Web.config" />
     <Content Include="Forms\Directeur\Emploi\EmploiNestedMasterPage.master" />
+    <Content Include="Forms\Club\Site1.Master" />
     <None Include="Forms\Formateur\Forms_Club\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Forms\Formateur\Forms_Club\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\e-FormaPro v2.0.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\e-FormaPro v2.0.csprojAssemblyReference.cache" />
+    <Content Include="obj\Release\e-FormaPro v2.0.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\e-FormaPro v2.0.csprojAssemblyReference.cache" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
