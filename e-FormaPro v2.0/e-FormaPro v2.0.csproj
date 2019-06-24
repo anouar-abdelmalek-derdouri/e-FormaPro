@@ -72,7 +72,6 @@
     <Content Include="Forms\Directeur\Accueil.aspx" />
     <Content Include="Forms\Directeur\Affectation.aspx" />
     <Content Include="Forms\Directeur\Annee Scolaire.aspx" />
-    <Content Include="Forms\Directeur\Club.aspx" />
     <Content Include="Forms\Directeur\Delegation.aspx" />
     <Content Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Directeur\EFMs.aspx" />
@@ -199,13 +198,6 @@
     </Compile>
     <Compile Include="Forms\Directeur\Annee Scolaire.aspx.designer.cs">
       <DependentUpon>Annee Scolaire.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Directeur\Club.aspx.cs">
-      <DependentUpon>Club.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\Directeur\Club.aspx.designer.cs">
-      <DependentUpon>Club.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Delegation.aspx.cs">
       <DependentUpon>Delegation.aspx</DependentUpon>
