@@ -39,6 +39,7 @@
                         <asp:Button ID="Button_Actualiser" runat="server" Text="Actualiser" 
                             Width="138px" />
                         <br />
+                        <br />
                         <asp:GridView ID="GridView_Stagiaire" runat="server" Width="785px">
                         </asp:GridView>
                         <br />
