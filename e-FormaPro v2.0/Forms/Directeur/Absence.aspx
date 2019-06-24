@@ -69,6 +69,7 @@
                             <asp:Button ID="Button_Ajouter" class="btn btn-primary" runat="server" Text="Ajouter" Width="117px" Height="38px" />
                         </td>
                     </tr>
+
                     <tr>
                         <td style="height: 48px;  width : 80%" align="center">
                 <asp:GridView ID="GridView1" runat="server" Width="663px">

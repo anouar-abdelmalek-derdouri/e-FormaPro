@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="~/Forms/Club/Site1.Master.cs" Inherits="Projet.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/css/Style_Club/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>Non du Club
+                    </h1>
+                </div>
+                <div class="loginDisplay">
+                    
+                    <asp:ImageButton ID="ImageButton_Notification" runat="server"
+                        Height="28px" ImageUrl="~/img/icon_club/appointment_reminders_48px.png"
+                        Width="34px" OnClick="ImageButton_Notification_Click1" />
+                    <asp:ImageButton ID="ImageButton_logout" runat="server"
+                        Height="28px" ImageUrl="~/img/icon_club/appointment_remin48px.png"
+                        Width="34px" OnClick="ImageButton_Notification_Click1" />
+                </div>
+            </div>
+
+            
+                        <div class="clear hideSkiplink">
+                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                                IncludeStyleBlock="false" Orientation="Vertical">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/defaultpage.aspx" Text="Home" />
+                                    <asp:MenuItem NavigateUrl="~/Planification.aspx" Text="Planification" />
+                                    <asp:MenuItem NavigateUrl="~/Publication.aspx" Text="Publication" />
+                                </Items>
+                            </asp:Menu>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+                        </div>
+                    
+                  
+        </div>
+
+
+
+    </form>
+</body>
+</html>

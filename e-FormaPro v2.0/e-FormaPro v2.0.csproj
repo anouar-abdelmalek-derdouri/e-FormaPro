@@ -114,7 +114,6 @@
     <Content Include="Forms\Formateur\Forms_Club\Notification.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\Planification.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\Projet.csproj" />
-    <Content Include="Forms\Formateur\Forms_Club\Projet.csproj.user" />
     <Content Include="Forms\Formateur\Forms_Club\Publication.aspx" />
     <Content Include="Forms\Formateur\Forms_Club\raport.aspx" />
     <Content Include="Forms\Formateur\Icon_club\add_user_group_man_man_32px.png" />
