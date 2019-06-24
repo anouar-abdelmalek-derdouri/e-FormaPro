@@ -3,4 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
     <h1>Accueil</h1>
+    <h1>Accueil</h1>
+    <h1>Accueil</h1>
+    <h1>Accueil</h1>
 </asp:Content>
