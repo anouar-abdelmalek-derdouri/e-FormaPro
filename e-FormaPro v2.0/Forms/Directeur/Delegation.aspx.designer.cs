@@ -85,15 +85,6 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.TextBox TextBox_PassWord;
         
         /// <summary>
-        /// CheckBox_Formation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Formation;
-        
-        /// <summary>
         /// CheckBox_Filiere control.
         /// </summary>
         /// <remarks>
@@ -110,6 +101,15 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox_Module;
+        
+        /// <summary>
+        /// CheckBox_Formation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Formation;
         
         /// <summary>
         /// CheckBox_GestionFormateur control.
@@ -218,33 +218,6 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox_Club;
-        
-        /// <summary>
-        /// CheckBox_Gestion_des_Entreprises control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Gestion_des_Entreprises;
-        
-        /// <summary>
-        /// CheckBox_Annee_Scolaire control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Annee_Scolaire;
-        
-        /// <summary>
-        /// CheckBox_Delegation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox_Delegation;
         
         /// <summary>
         /// Button_Valider control.
