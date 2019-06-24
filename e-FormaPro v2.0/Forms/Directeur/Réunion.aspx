@@ -5,6 +5,7 @@
      <table style="width:100%;">
     <tr>
         <td class="style6">
+
             <br />
             <asp:Label ID="Label6" runat="server" Text="Numero :"></asp:Label>
         </td>
