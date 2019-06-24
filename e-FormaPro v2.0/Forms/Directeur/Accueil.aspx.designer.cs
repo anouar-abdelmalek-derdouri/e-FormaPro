@@ -11,7 +11,7 @@ namespace e_FormaPro_v2._0.Forms.Directeur
 {
 
 
-    public partial class Gestion_des_entreprises
+    public partial class Accueil
     {
     }
 }

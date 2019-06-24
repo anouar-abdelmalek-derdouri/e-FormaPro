@@ -5,11 +5,16 @@
      <table style="width:100%;">
     <tr>
         <td class="style6">
-            <asp:Label ID="Label6" runat="server" Text="Id :"></asp:Label>
+            <br />
+            <asp:Label ID="Label6" runat="server" Text="Numero :"></asp:Label>
         </td>
         <td class="style3">
+            <br />
+            <br />
             <asp:TextBox ID="TextBox_Numero" runat="server" Width="41px" 
                 BackColor="#669999" style="margin-left: 0px"></asp:TextBox>
+            <br />
+            <br />
         </td>
     </tr>
     <tr>
@@ -19,6 +24,8 @@
         <td class="style19">
             <asp:TextBox ID="TextBox_Date" runat="server" Width="189px" 
                 TextMode="Date"></asp:TextBox>
+            <br />
+            <br />
         </td>
         </tr>
     <tr>
@@ -27,6 +34,8 @@
         </td>
         <td class="style19">
             <asp:TextBox ID="TextBox_Heure" runat="server" TextMode="Time" Width="76px"></asp:TextBox>
+            <br />
+            <br />
         </td>
         <tr>
         <td class="style1">
@@ -34,7 +43,10 @@
         </td>
         <td class="style5">
             <asp:TextBox ID="TextBox_Objectifs" runat="server" TextMode="MultiLine" 
-                Width="186px" Height="74px"></asp:TextBox>
+                Width="186px" Height="79px"></asp:TextBox>
+
+            <br />
+            <br />
 
         </td>
     </tr>
@@ -55,33 +67,26 @@
                 Text="+" Width="27px" Height="22px" 
                 />
             <br />
+            <br />
+            <br />
             <asp:ListBox ID="ListBox_Participants" runat="server" Width="183px">
                 <asp:ListItem>Anoir derdouri </asp:ListItem>
                 <asp:ListItem>ana</asp:ListItem>
             </asp:ListBox>
+            <br />
+            <br />
         </td>
     </tr>
     <tr>
-        <td class="style17">
-            </td>
-        <td class="style18">
-        </td>
-    </tr>
-    <tr>
-        <td class="style7">
-            &nbsp;</td>
-        <td class="style19">
+        <td class="style7" align="center" colspan="2">
+            <br />
             <asp:Button ID="Button_Ajouter" runat="server"
-                Text="Ajouter" Width="79px" />
-        </td>
-    </tr>
-    <tr>
-        <td class="style7">
-            &nbsp;</td>
-        <td class="style19">
+                Text="Ajouter" Width="79px"  class="btn btn-primary"/>
+            <br />
+            <br />
             <asp:GridView ID="GridView_Reunion" runat="server" BackColor="White" 
                 BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
-                GridLines="Vertical" Width="527px">
+                GridLines="Vertical" Width="591px">
                 <AlternatingRowStyle BackColor="Gainsboro" />
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -97,27 +102,14 @@
         </td>
     </tr>
     <tr>
-        <td class="style13">
-            </td>
-        <td class="style14">
-            <asp:ListBox ID="ListBox2" runat="server" Width="151px">
+        <td class="style7" align="center" colspan="2">
+            
+            <asp:ListBox ID="ListBox2" runat="server" Width="325px">
                 <asp:ListItem>Anoir derdouri </asp:ListItem>
                 <asp:ListItem>ana</asp:ListItem>
             </asp:ListBox>
             
         </td>
-    </tr>
-    <tr>
-        <td class="style13">
-            &nbsp;</td>
-        <td class="style14">
-            &nbsp;</td>
-    </tr>
-    <tr>
-        <td class="style13">
-            &nbsp;</td>
-        <td class="style14">
-            &nbsp;</td>
     </tr>
     </table>
 </asp:Content>
