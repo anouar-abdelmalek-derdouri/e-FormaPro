@@ -6,7 +6,7 @@ using System.Web;
 using e_FormaPro_v2._0.Utilitaires;
 namespace e_FormaPro_v2._0.Classes.Class_Club
 {
-    class Club
+    class Clubs
     {
         
 
@@ -26,14 +26,6 @@ namespace e_FormaPro_v2._0.Classes.Class_Club
             set { _Sujets = value; }
         }
 
-        private string _Accée;
-
-        public string Accée
-        {
-            get { return _Accée; }
-            set { _Accée = value; }
-        }
-        
 
         private string _Régles;
 
@@ -66,11 +58,11 @@ namespace e_FormaPro_v2._0.Classes.Class_Club
 
         }
 
-        public Club(string nomClub, string sujets, string accée, string régles, string stagiaire,string formateur)
+        public Club(string nomClub, string sujets,  string régles, string stagiaire,string formateur)
         {
             NomClub = nomClub;
             Sujets = sujets;
-            Accée = accée;
+            
             Régles = régles;
             Stagiaire = stagiaire;
             Formateur = formateur;

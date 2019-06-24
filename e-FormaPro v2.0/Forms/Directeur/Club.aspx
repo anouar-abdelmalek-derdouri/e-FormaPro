@@ -18,7 +18,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Nom du club :"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox_nom" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -26,7 +26,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Sujet :"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox_sujet" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@
                 <asp:Label ID="Label3" runat="server" Text="Les regles :"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox_regles" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -42,25 +42,56 @@
                 <asp:Label ID="Label4" runat="server" Text="Le president :"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                
+                <asp:RadioButton ID="RadioButton_f" Text="Formateurs" runat="server" />
+               
+                <br />
+                <asp:RadioButton ID="RadioButton_s" Text="Stagiaires" runat="server" />
+                
+                
             </td>
+            <td>
+                 <asp:DropDownList ID="DropDownList_f"  runat="server" DataSourceID="SqlDataSource1" DataTextField="Matricule" DataValueField="Matricule">
+                </asp:DropDownList>
+                 <asp:DropDownList ID="DropDownList_fn" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nom" DataTextFormatString="Nom" >
+                 </asp:DropDownList>
+                 <asp:DropDownList ID="DropDownList_fp" runat="server" DataSourceID="SqlDataSource1" DataTextField="Prenom" DataValueField="Prenom">
+                 </asp:DropDownList>
+                <br />
+                <asp:DropDownList ID="DropDownList_s" runat="server" DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
+                </asp:DropDownList>
+                 <asp:DropDownList ID="DropDownList_sn" runat="server" DataSourceID="SqlDataSource2" DataTextField="Nom" DataValueField="Nom" >
+                 </asp:DropDownList>
+                 <asp:DropDownList ID="DropDownList_sp" runat="server" DataSourceID="SqlDataSource2" DataTextField="Prenom" DataValueField="Prenom">
+                 </asp:DropDownList>
+            </td>
+
         </tr>
         <tr>
             <td colspan = "2" align="center" >
-                <asp:ImageButton ID="ImageButton_add" ImageUrl="~/img/icon_club/add_user_group_man_man_32px.png"
-                    runat="server" />
-                <asp:ImageButton ID="ImageButton_update" ImageUrl="~/img/icon_club/add_user_group_man_man_32px.png"
-                    runat="server" OnClick="ImageButton_update_Click" />
-                <asp:ImageButton ID="ImageButton_delete" ImageUrl="~/img/icon_club/add_user_group_man_man_32px.png"
-                    runat="server" />
+                <br />
+
+                <asp:ImageButton ID="ImageButton_add" ImageUrl="~/img/icon_club/add_userg.png"
+                    runat="server" Height="41px" Width="44px" OnClick="ImageButton_add_Click" />
+                <asp:ImageButton ID="ImageButton_update" ImageUrl="~/img/icon_club/edit_user.png"
+                    runat="server" OnClick="ImageButton_update_Click" Height="35px" Width="44px" />
+                <asp:ImageButton ID="ImageButton_delete" ImageUrl="~/img/icon_club/remove_user.png"
+                    runat="server" Height="35px" Width="44px" OnClick="ImageButton_delete_Click" />
             </td>
         </tr>
     </table>
 
     <br />
-    <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="434px">
+    <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#333C40" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="434px" AutoGenerateColumns="False" DataSourceID="SqlDataSource3">
+        <Columns>
+            <asp:BoundField DataField="NomClub" HeaderText="NomClub" SortExpression="NomClub" />
+            <asp:BoundField DataField="Sujets" HeaderText="Sujets" SortExpression="Sujets" />
+            <asp:BoundField DataField="Acces" HeaderText="Acces" SortExpression="Acces" />
+            <asp:BoundField DataField="Régles" HeaderText="Régles" SortExpression="Régles" />
+            <asp:BoundField DataField="Président" HeaderText="Président" SortExpression="Président" />
+        </Columns>
         <FooterStyle BackColor="White" ForeColor="#000066" />
-        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#333C40" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
         <RowStyle ForeColor="#000066" />
         <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
@@ -69,6 +100,8 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
+     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:combobox_président %>" SelectCommand="SELECT * FROM [Formateurs]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:combobox_président %>" SelectCommand="SELECT * FROM [Stagiaires]"></asp:SqlDataSource>
      <br />
      <br />
      <br />
