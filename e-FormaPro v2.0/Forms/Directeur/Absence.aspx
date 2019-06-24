@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            height: 45px;
+            height: 45px; 
         }
     </style>
 </asp:Content>
