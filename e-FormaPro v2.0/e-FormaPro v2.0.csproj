@@ -64,6 +64,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\e-FormaPro v2.0.dll" />
+    <Content Include="bin\e-FormaPro v2.0.pdb" />
     <Content Include="css\connexion.css" />
     <Content Include="css\global.css" />
     <Content Include="css\master.css" />
@@ -664,7 +666,6 @@
     <Content Include="Forms\Master page.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\" />
     <Folder Include="Forms\Directeur\Forms_Directeur\Forms_Espa_Directeur\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
@@ -682,6 +683,9 @@
     <Content Include="obj\Debug\e-FormaPro v2.0.csprojAssemblyReference.cache" />
     <Content Include="obj\Release\e-FormaPro v2.0.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Release\e-FormaPro v2.0.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\e-FormaPro v2.0.dll.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
