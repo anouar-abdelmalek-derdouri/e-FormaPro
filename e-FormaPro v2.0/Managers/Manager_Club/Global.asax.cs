@@ -18,6 +18,7 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
         public static SqlCommand _Command = new SqlCommand();
 
         public static string variable = "";
+        public static string president = "";
         public static string variableNomClub = "";
         public static string variableSujet = "";
         public static string variableAccée = "";

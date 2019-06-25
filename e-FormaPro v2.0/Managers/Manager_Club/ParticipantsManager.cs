@@ -61,27 +61,41 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
         //    // Global._DataView.RowFilter = string.Format("Nom = '{0}'", DV);
             
         //}
-        public static bool ParticipantsDVF(string D)
+        public static bool ParticipantsDVF(string club, string Num)
         {
             Participants();
             Participantaff();
+           
+                            foreach (DataRow Ligne in Global.Dataset.Tables["Club"].Rows)
+                            {
+                                if (Ligne["Président"].ToString() == Num.ToString() &&
+                                    Ligne["NomClub"].ToString() == club.ToString())
+                                {
+                                    Global.president = Ligne["Président"].ToString();
+                                    return true;
+                                    break;
+
+                                }
+                                else
+                                {
+                                    foreach (DataRow L in Global.Dataset.Tables["Participants"].Rows)
+                                    {
+
+                                        if (L["Numéro"].ToString() == Num.ToString() &&
+                                            L["NomClub"].ToString() == club.ToString())
+                                        {
+                                            return true;
+                                            break;
+                                        }
+
+                                    }
+                                    break;
+                                }
+
+                            }
+            return false;
             
 
-            
-            
-                foreach (DataRow Ligne in Global.Dataset.Tables["Participants"].Rows)
-                {
-                    if (Ligne["Numéro"].ToString() == D.ToString() && Ligne["NomClub"].ToString() == Global.variable)
-                    {
-                        return true;
-                    }
-                    
-                }
-                return false;
-
-                
-                
-            
 
         }
 

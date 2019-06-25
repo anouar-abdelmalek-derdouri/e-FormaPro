@@ -7,36 +7,36 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace Projet {
+namespace e_FormaPro_v2._0.Forms.Club {
     
     
-    public partial class Demandes {
+    public partial class listclub {
         
         /// <summary>
-        /// Contrôle GridView1.
+        /// Contrôle form1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Contrôle GridView2.
+        /// Contrôle DataList_club.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.DataList DataList_club;
         
         /// <summary>
-        /// Contrôle SqlDataSource1.
+        /// Contrôle SqlDataSource_clublist.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_clublist;
     }
 }

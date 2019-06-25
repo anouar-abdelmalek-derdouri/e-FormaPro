@@ -47,14 +47,14 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
             return Global.Dataset.Tables["[Demande appartenance]"];
         }
 
-        public static void AjouterDM(Demande_appartenance demande_appartenance)
+        public static void AjouterDM(Demande_appartenance DM)
         {
             Demande_appartenance();
             DataRow ligne = Global.Dataset.Tables["[Demande appartenance]"].NewRow();
             
-            ligne["Club"] = demande_appartenance.IdClub;
-            ligne["Formateur"] = demande_appartenance.Formateur;
-            ligne["Stagiaire"] = demande_appartenance.Stagiaire;
+            ligne["Club"] = DM.IdClub;
+            ligne["Formateur"] = DM.Formateur;
+            ligne["Stagiaire"] = DM.Stagiaire;
 
 
             Global.Dataset.Tables["[Demande appartenance]"].Rows.Add(ligne);
@@ -62,16 +62,23 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
 
         }
 
-        public static void supDM(int id)
+        public static void SupDM(int id)
         {
             Demande_appartenance();
             foreach (DataRow Ligne in Global.Dataset.Tables["[Demande appartenance]"].Rows)
             {
-                if (Ligne["IdDA"].ToString() ==  id.ToString())
+                if (Ligne["Stagiaire"].ToString() ==  id.ToString())
                 {
                     Ligne.Delete();
                     sda.Update(Global.Dataset, "[Demande appartenance]");
    
+                    break;
+                }
+                else if (Ligne["Formateur"].ToString() == id.ToString())
+                {
+                    Ligne.Delete();
+                    sda.Update(Global.Dataset, "[Demande appartenance]");
+
                     break;
                 }
             }

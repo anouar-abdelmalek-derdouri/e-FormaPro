@@ -69,10 +69,17 @@
     <Content Include="css\connexion.css" />
     <Content Include="css\global.css" />
     <Content Include="css\master.css" />
+    <Content Include="css\pro\Bootstrap\bootstrap.min.css" />
+    <Content Include="css\pro\script\app.min.js" />
+    <Content Include="css\pro\script\bootstrap.min.js" />
+    <Content Include="css\pro\script\jQuery-2.1.4.min.js" />
+    <Content Include="css\pro\Style\AdminLTE.min.css" />
+    <Content Include="css\pro\Style\skin-blue.min.css" />
+    <Content Include="css\Style_Club\StyleSheet1.css" />
     <Content Include="Forms\Club\Activitées.aspx" />
     <Content Include="Forms\Club\defaultpage.aspx" />
     <Content Include="Forms\Club\Demandes.aspx" />
-    <Content Include="Forms\Club\listclubs.aspx" />
+    <Content Include="Forms\Club\listclub.aspx" />
     <Content Include="Forms\Club\Notification.aspx" />
     <Content Include="Forms\Club\Planification.aspx" />
     <Content Include="Forms\Club\Publication.aspx" />
@@ -138,10 +145,13 @@
     <Content Include="img\Icon_club\download_,100px.png" />
     <Content Include="img\Icon_club\download_100px.png" />
     <Content Include="img\Icon_club\edit_user.png" />
+    <Content Include="img\Icon_club\info_40px.png" />
     <Content Include="img\Icon_club\message_48px.png" />
     <Content Include="img\Icon_club\remove_user.png" />
     <Content Include="img\Icon_club\report_card_48px.png" />
+    <Content Include="img\Icon_club\send_40px.png" />
     <Content Include="img\Icon_club\verified_account_48px.png" />
+    <Content Include="img\Icon_club\visible_40px.png" />
     <Content Include="img\Table d%27appréciation.png" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Surveillant\Forms_Surveillant\Demandes de certificat de scolarité.aspx" />
@@ -203,6 +213,13 @@
     </Compile>
     <Compile Include="Forms\Club\Demandes.aspx.designer.cs">
       <DependentUpon>Demandes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Club\listclub.aspx.cs">
+      <DependentUpon>listclub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Club\listclub.aspx.designer.cs">
+      <DependentUpon>listclub.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Club\Notification.aspx.cs">
       <DependentUpon>Notification.aspx</DependentUpon>
