@@ -37,7 +37,7 @@
         </tr>
         <tr>
             <td class="style3" align="center">
-                <asp:Button ID="_Ajouter" class="btn btn-primary" runat="server" Text="Ajouter"  />
+                <asp:Button ID="_Ajouter" class="btn btn-primary" runat="server" Text="Ajouter" OnClick="_Ajouter_Click"  />
                 <br />
                 <br />
             </td>
@@ -59,6 +59,11 @@
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
             </td>
+          
+        </tr>
+        <tr>
+            <td class="style3" align="center">
+                &nbsp;</td>
           
         </tr>
     </table>

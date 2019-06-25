@@ -11,7 +11,16 @@ namespace e_FormaPro_v2._0.Forms.Directeur
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //hadi khasha session
+            //if (!IsPostBack)
+            //{
+            //    if (Session["type"] == null)
+            //        Response.Redirect("Auth.aspx");
+            //    else if (Session["type"].ToString() == "service")
+            //    {
+            //        mv.ActiveViewIndex = 1;
+            //    }
+            //}
         }
     }
 }
