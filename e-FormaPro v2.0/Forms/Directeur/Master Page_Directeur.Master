@@ -96,7 +96,7 @@
                     <li class="active"><a href="Module.aspx"><i class='fa fa-link'></i><span>Module</span></a></li>
                     <li class="active"><a href="Groupe.aspx"><i class='fa fa-link'></i><span>Les Groupes</span></a></li>
                     <li><a href="Stagiaire.aspx"><i class='fa fa-link'></i><span>Les Stagiaire</span></a></li>
-                    <li><a href="Salle.aspx"><i class='fa fa-link'></i><span>Les Salles</span></a></li>
+                    <li><a href="Salles.aspx"><i class='fa fa-link'></i><span>Les Salles</span></a></li>
                     <li><a href="Etat d'avancement.aspx"><i class='fa fa-link'></i><span>Etat d'avancement</span></a></li>
                     
                      <li class="treeview">
