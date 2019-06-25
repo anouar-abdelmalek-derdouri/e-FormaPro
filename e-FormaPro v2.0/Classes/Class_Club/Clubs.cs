@@ -53,12 +53,12 @@ namespace e_FormaPro_v2._0.Classes.Class_Club
         
         
 
-        public Club()
+        public Clubs()
         {
 
         }
 
-        public Club(string nomClub, string sujets,  string régles, string stagiaire,string formateur)
+        public Clubs(string nomClub, string sujets,  string régles, string stagiaire,string formateur)
         {
             NomClub = nomClub;
             Sujets = sujets;

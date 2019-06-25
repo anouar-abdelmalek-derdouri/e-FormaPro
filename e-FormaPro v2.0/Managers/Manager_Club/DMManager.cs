@@ -65,13 +65,11 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
         public static void supDM(int id)
         {
             Demande_appartenance();
-            System.Windows.Forms.MessageBox.Show(id.ToString());
             foreach (DataRow Ligne in Global.Dataset.Tables["[Demande appartenance]"].Rows)
             {
                 if (Ligne["IdDA"].ToString() ==  id.ToString())
                 {
                     Ligne.Delete();
-                    System.Windows.Forms.MessageBox.Show("Test2");
                     sda.Update(Global.Dataset, "[Demande appartenance]");
    
                     break;

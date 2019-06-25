@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Web;
 using e_FormaPro_v2._0.Classes.Class_Club;
+using e_FormaPro_v2._0.Managers.Manager_Club;
 
 namespace e_FormaPro_v2._0.Managers.Manager_Club
 {
@@ -23,10 +24,10 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
             }
             return Global.Dataset.Tables["Praticipants"];
         }
-        public static void AjouterPla(Praticipants Praticipant)
+        public static void AjouterPla(Planifications planification)
         {
             Praticipants();
-            DataRow ligne = Global.Dataset.Tables["Praticipants"].NewRow();
+            DataRow ligne = Global.Dataset.Tables["Planifications"].NewRow();
 
             ligne["Sujet"] = planification.Sujet;
             ligne["Date"] = planification.Date;

@@ -36,7 +36,7 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
             return Global.Dataset.Tables["Clubs"];
         }
 
-        public static void AjouterClub(Club club)
+        public static void AjouterClub(Clubs club)
         {
             Clubs();
             Club();
@@ -44,7 +44,7 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
 
             ligne["NomClub"] = club.NomClub;
             ligne["Sujets"] = club.Sujets;
-            ligne["Acces"] = club.Accée;
+            
             ligne["Régles"] = club.Régles;
             ligne["Stagiaire"] = club.Stagiaire;
             ligne["Formateur"] = club.Formateur;
@@ -65,7 +65,7 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
                 {
                     Global.variableNomClub = ligne["NomClub"].ToString();
                     Global.variableSujet = ligne["Sujets"].ToString();
-                    Global.variableAccée = ligne["Acces"].ToString();
+                   
                     Global.variableRégles = ligne["Régles"].ToString();
                     Global.variableParti = ligne["Président"].ToString();
                 }

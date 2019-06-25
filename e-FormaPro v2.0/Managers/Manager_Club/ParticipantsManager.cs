@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using La_tâche_Espace_des_clubs.Classes;
 using System.Data.SqlClient;
 using System.Data;
 using System.Web;
@@ -75,7 +74,6 @@ namespace e_FormaPro_v2._0.Managers.Manager_Club
                     if (Ligne["Numéro"].ToString() == D.ToString() && Ligne["NomClub"].ToString() == Global.variable)
                     {
                         return true;
-                        break;
                     }
                     
                 }
