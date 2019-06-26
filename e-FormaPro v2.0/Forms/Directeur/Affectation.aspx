@@ -35,7 +35,7 @@
                     DataValueField="Matricule">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Formateurs]"></asp:SqlDataSource>
                 <br />
             </td>
@@ -49,7 +49,7 @@
                     DataValueField="Id_Groupes">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Groupes]"></asp:SqlDataSource>
                 <br />
             </td>
@@ -63,7 +63,7 @@
                     DataValueField="Id_Module">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Modules]"></asp:SqlDataSource>
                 <br />
                 <asp:Label ID="Label4" runat="server" Text="Semester :"></asp:Label>
@@ -73,7 +73,7 @@
                     DataValueField="Id_Semestre">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource5" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Semestres]"></asp:SqlDataSource>
                 <br />
                 <br />
@@ -125,7 +125,7 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [AffectationFormateursModule]" 
                     DeleteCommand="DELETE FROM [AffectationFormateursModule] WHERE [Id_Affectation] = @Id_Affectation" 
                     InsertCommand="INSERT INTO [AffectationFormateursModule] ([Formateur], [Groupe], [Module], [Semester]) VALUES (@Formateur, @Groupe, @Module, @Semester)" 

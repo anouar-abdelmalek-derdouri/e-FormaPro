@@ -187,7 +187,7 @@
                     Height="20px">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Filieres]"></asp:SqlDataSource>
             </td>
         </tr>
@@ -291,44 +291,7 @@
         </td>
         <td>
 
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
-                SelectCommand="SELECT * FROM [Formateurs]" 
-                DeleteCommand="DELETE FROM [Formateurs] WHERE [Matricule] = @Matricule" 
-                InsertCommand="INSERT INTO [Formateurs] ([Matricule], [Nom], [Prenom], [DatEmbauche], [Type_Formateur], [DateNaissance], [Telephone], [Email], [MotDePasse], [Addresse], [Filiere]) VALUES (@Matricule, @Nom, @Prenom, @DatEmbauche, @Type_Formateur, @DateNaissance, @Telephone, @Email, @MotDePasse, @Addresse, @Filiere)" 
-                UpdateCommand="UPDATE [Formateurs] SET [Nom] = @Nom, [Prenom] = @Prenom, [DatEmbauche] = @DatEmbauche, [Type_Formateur] = @Type_Formateur, [DateNaissance] = @DateNaissance, [Telephone] = @Telephone, [Email] = @Email, [MotDePasse] = @MotDePasse, [Addresse] = @Addresse, [Filiere] = @Filiere WHERE [Matricule] = @Matricule">
-                <DeleteParameters>
-                    <asp:Parameter Name="Matricule" Type="String" />
-                </DeleteParameters>
-                <InsertParameters>
-                    <asp:Parameter Name="Matricule" Type="String" />
-                    <asp:Parameter Name="Nom" Type="String" />
-                    <asp:Parameter Name="Prenom" Type="String" />
-                    <asp:Parameter DbType="Date" Name="DatEmbauche" />
-                    <asp:Parameter Name="Type_Formateur" Type="String" />
-                    <asp:Parameter DbType="Date" Name="DateNaissance" />
-                    <asp:Parameter Name="Telephone" Type="String" />
-                    <asp:Parameter Name="Email" Type="String" />
-                    <asp:Parameter Name="MotDePasse" Type="String" />
-                    <asp:Parameter Name="Addresse" Type="String" />
-                    <asp:Parameter Name="Filiere" Type="Int32" />
-                </InsertParameters>
-                <UpdateParameters>
-                    <asp:Parameter Name="Nom" Type="String" />
-                    <asp:Parameter Name="Prenom" Type="String" />
-                    <asp:Parameter DbType="Date" Name="DatEmbauche" />
-                    <asp:Parameter Name="Type_Formateur" Type="String" />
-                    <asp:Parameter DbType="Date" Name="DateNaissance" />
-                    <asp:Parameter Name="Telephone" Type="String" />
-                    <asp:Parameter Name="Email" Type="String" />
-                    <asp:Parameter Name="MotDePasse" Type="String" />
-                    <asp:Parameter Name="Addresse" Type="String" />
-                    <asp:Parameter Name="Filiere" Type="Int32" />
-                    <asp:Parameter Name="Matricule" Type="String" />
-                </UpdateParameters>
-            </asp:SqlDataSource>
-
-        </td>
+            &nbsp;</td>
             <td colspan="2" style="width: 155px; height: 23px;">
                 <asp:Button ID="Button_Ajouter" runat="server" Text="Ajouter" Width="188px" 
                     onclick="Button_Ajouter_Click" />

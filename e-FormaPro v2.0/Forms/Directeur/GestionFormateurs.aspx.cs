@@ -33,7 +33,7 @@ namespace e_FormaPro_v2._0.Forms.Directeur
         protected void Button_Ajouter_Click(object sender, EventArgs e)
         {
             
-            //TextBox_motdepass.Text = CreatePassword(9);
+            TextBox_motdepass.Text = CreatePassword(9);
             SqlConnection Connection = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=Espace_pédagogique2;Integrated Security=True");
             DataSet1 dataSetAchievers = new DataSet1();
 

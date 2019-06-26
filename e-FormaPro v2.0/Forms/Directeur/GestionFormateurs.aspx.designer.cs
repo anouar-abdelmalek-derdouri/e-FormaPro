@@ -292,15 +292,6 @@ namespace e_FormaPro_v2._0.Forms.Compte {
         protected global::System.Web.UI.WebControls.TextBox TextBox_motdepass;
         
         /// <summary>
-        /// Contrôle SqlDataSource2.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
-        
-        /// <summary>
         /// Contrôle Button_Ajouter.
         /// </summary>
         /// <remarks>
