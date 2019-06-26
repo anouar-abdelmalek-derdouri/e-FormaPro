@@ -88,6 +88,7 @@
     <Content Include="Forms\Directeur\Accueil.aspx" />
     <Content Include="Forms\Directeur\Affectation.aspx" />
     <Content Include="Forms\Directeur\Annee Scolaire.aspx" />
+    <Content Include="Forms\Directeur\Club.aspx" />
     <Content Include="Forms\Directeur\Delegation.aspx" />
     <Content Include="Forms\Directeur\Demande d%27autorisation d%27absence.aspx" />
     <Content Include="Forms\Directeur\EFMs.aspx" />
@@ -110,7 +111,8 @@
     <Content Include="Forms\Directeur\Gestion des formateurs.aspx" />
     <Content Include="Forms\Directeur\Groupe.aspx" />
     <Content Include="Forms\Directeur\Jour Feries.aspx" />
-    <Content Include="Forms\Directeur\Les salles.aspx" />
+    <Content Include="Forms\Directeur\ProfileDericteur.aspx" />
+    <Content Include="Forms\Directeur\Salles.aspx" />
     <Content Include="Forms\Directeur\Module.aspx" />
     <Content Include="Forms\Directeur\Passage_Fin Formation.aspx" />
     <Content Include="Forms\Directeur\Réunion.aspx" />
@@ -288,6 +290,13 @@
     <Compile Include="Forms\Directeur\Annee Scolaire.aspx.designer.cs">
       <DependentUpon>Annee Scolaire.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Directeur\Club.aspx.cs">
+      <DependentUpon>Club.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Club.aspx.designer.cs">
+      <DependentUpon>Club.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Directeur\Delegation.aspx.cs">
       <DependentUpon>Delegation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -442,12 +451,19 @@
     <Compile Include="Forms\Directeur\Jour Feries.aspx.designer.cs">
       <DependentUpon>Jour Feries.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Directeur\Les salles.aspx.cs">
-      <DependentUpon>Les salles.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\ProfileDericteur.aspx.cs">
+      <DependentUpon>ProfileDericteur.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\Directeur\Les salles.aspx.designer.cs">
-      <DependentUpon>Les salles.aspx</DependentUpon>
+    <Compile Include="Forms\Directeur\ProfileDericteur.aspx.designer.cs">
+      <DependentUpon>ProfileDericteur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Salles.aspx.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Salles.aspx.designer.cs">
+      <DependentUpon>Salles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Master Page_Directeur.Master.cs">
       <DependentUpon>Master Page_Directeur.Master</DependentUpon>

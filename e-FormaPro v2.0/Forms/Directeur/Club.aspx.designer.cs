@@ -10,25 +10,25 @@
 namespace e_FormaPro_v2._0.Forms.Directeur {
     
     
-    public partial class WebForm2 {
+    public partial class Club {
         
         /// <summary>
-        /// Label6 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBox_Numero control.
+        /// TextBox_NomClub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Numero;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_NomClub;
         
         /// <summary>
         /// Label2 control.
@@ -40,58 +40,13 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TextBox_Date control.
+        /// TextBox_Sujet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Date;
-        
-        /// <summary>
-        /// Label7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
-        
-        /// <summary>
-        /// TextBox_Heure control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Heure;
-        
-        /// <summary>
-        /// DropDownList_MatinOrApres control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_MatinOrApres;
-        
-        /// <summary>
-        /// Label8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
-        
-        /// <summary>
-        /// TextBox_Duree control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Duree;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Sujet;
         
         /// <summary>
         /// Label3 control.
@@ -103,13 +58,31 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// TextBox_Objectifs control.
+        /// TextBox_Regles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Objectifs;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Regles;
+        
+        /// <summary>
+        /// RadioButton_Stagiaires control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton_Stagiaires;
+        
+        /// <summary>
+        /// RadioButton_Formateur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton_Formateur;
         
         /// <summary>
         /// Label4 control.
@@ -121,40 +94,103 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// DropDownList_Participants control.
+        /// DropDownList_NumeroStagiaire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Participants;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_NumeroStagiaire;
         
         /// <summary>
-        /// Button_Ajouter_Participent control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Ajouter_Participent;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// DropDownList_NomStagiaire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_NomStagiaire;
         
         /// <summary>
-        /// ListBox_Participants control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox_Participants;
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// DropDownList_PrenomStagiaire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_PrenomStagiaire;
+        
+        /// <summary>
+        /// Label7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label7;
+        
+        /// <summary>
+        /// DropDownList_NumeroFormateur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_NumeroFormateur;
+        
+        /// <summary>
+        /// Label8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// DropDownList_NomFormateur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_NomFormateur;
+        
+        /// <summary>
+        /// Label9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label9;
+        
+        /// <summary>
+        /// DropDownList_PrenomFormateur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_PrenomFormateur;
         
         /// <summary>
         /// Button_Ajouter control.
@@ -166,39 +202,30 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Button Button_Ajouter;
         
         /// <summary>
-        /// GridView_Reunion control.
+        /// Button_Modifier control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView_Reunion;
+        protected global::System.Web.UI.WebControls.Button Button_Modifier;
         
         /// <summary>
-        /// GridView1 control.
+        /// Button_Supprimer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Button Button_Supprimer;
         
         /// <summary>
-        /// SqlDataSource_Reunion control.
+        /// GridView_Afficher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Reunion;
-        
-        /// <summary>
-        /// SqlDataSource_Participants control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Participants;
+        protected global::System.Web.UI.WebControls.GridView GridView_Afficher;
     }
 }

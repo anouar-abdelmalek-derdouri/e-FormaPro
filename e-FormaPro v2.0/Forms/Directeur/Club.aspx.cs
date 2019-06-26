@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace e_FormaPro_v2._0.Forms.Directeur
 {
-    public partial class Les_salles : System.Web.UI.Page
+    public partial class Club : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

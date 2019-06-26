@@ -10,25 +10,88 @@
 namespace e_FormaPro_v2._0.Forms.Directeur {
     
     
-    public partial class WebForm2 {
+    public partial class ProfileDericteur {
         
         /// <summary>
-        /// Label6 control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// TextBox_Numero control.
+        /// DropDownList_Formateur control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Numero;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Formateur;
+        
+        /// <summary>
+        /// Label_Matricule control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Matricule;
+        
+        /// <summary>
+        /// Label_Nom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Nom;
+        
+        /// <summary>
+        /// Label_Prenom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Prenom;
+        
+        /// <summary>
+        /// TextBox_ModifierEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TextBox_ModifierEmail;
+        
+        /// <summary>
+        /// TextBox_ModifierMotPasse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TextBox_ModifierMotPasse;
+        
+        /// <summary>
+        /// mv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.MultiView mv;
+        
+        /// <summary>
+        /// Panel_Email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_Email;
         
         /// <summary>
         /// Label2 control.
@@ -40,58 +103,13 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TextBox_Date control.
+        /// TextBox_EmailOld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Date;
-        
-        /// <summary>
-        /// Label7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
-        
-        /// <summary>
-        /// TextBox_Heure control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Heure;
-        
-        /// <summary>
-        /// DropDownList_MatinOrApres control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_MatinOrApres;
-        
-        /// <summary>
-        /// Label8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
-        
-        /// <summary>
-        /// TextBox_Duree control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Duree;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_EmailOld;
         
         /// <summary>
         /// Label3 control.
@@ -103,13 +121,13 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// TextBox_Objectifs control.
+        /// TextBox_EmailNew control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Objectifs;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_EmailNew;
         
         /// <summary>
         /// Label4 control.
@@ -121,84 +139,111 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// DropDownList_Participants control.
+        /// TextBox_ConfermerEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Participants;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_ConfermerEmail;
         
         /// <summary>
-        /// Button_Ajouter_Participent control.
+        /// CompareValidator_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Ajouter_Participent;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator_Email;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// Button_ChangeEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Button Button_ChangeEmail;
         
         /// <summary>
-        /// ListBox_Participants control.
+        /// Panel_Email0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox_Participants;
+        protected global::System.Web.UI.WebControls.Panel Panel_Email0;
         
         /// <summary>
-        /// Button_Ajouter control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Ajouter;
+        protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// GridView_Reunion control.
+        /// TextBox_motPassOld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView_Reunion;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_motPassOld;
         
         /// <summary>
-        /// GridView1 control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// SqlDataSource_Reunion control.
+        /// TextBox_MotPassNew control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Reunion;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_MotPassNew;
         
         /// <summary>
-        /// SqlDataSource_Participants control.
+        /// Label8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Participants;
+        protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// TextBox_ConfermerMotPasse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_ConfermerMotPasse;
+        
+        /// <summary>
+        /// CompareValidator_MotPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator_MotPass;
+        
+        /// <summary>
+        /// Button_ChangeEmail0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_ChangeEmail0;
     }
 }
