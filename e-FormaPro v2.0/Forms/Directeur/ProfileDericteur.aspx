@@ -2,98 +2,82 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            margin-top: 0px;
+        
+        .auto-style3 {
+            width: 1023px;
         }
 
-        .auto-style2 {
-            margin-bottom: 26px;
+        .auto-style4 {
+            height: 20px;
+        }
+
+        .auto-style5 {
+            width: 118px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_main" runat="server">
-    <table style="width: 100%;">
+
+    <table class="auto-style3">
         <tr>
-            <td align="center">
-                <br />
+            <td>&nbsp;</td>
+            <td class="auto-style5"></td>
+            <td>
                 <asp:FileUpload ID="FileUpload1" runat="server" />
-                <br />
-                <asp:DropDownList ID="DropDownList_Formateur" runat="server" Height="16px"
-                    Width="175px">
-                </asp:DropDownList>
-                <br />
-                <br />
-                <br />
             </td>
+            <td>
+                <asp:Button ID="Button_Upload" runat="server" OnClick="Button1_Click" Text="Upload" />
+            </td>
+            <td></td>
         </tr>
         <tr>
-            <td align="center">
-                <asp:Label ID="Label_Matricule" runat="server"></asp:Label>
-                <br />
-                <asp:Label ID="Label_Nom" runat="server"></asp:Label>
-                <br />
-                <asp:Label ID="Label_Prenom" runat="server"></asp:Label>
-                <br />
+            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style5" rowspan="5">
+                <asp:Image ID="imgPicture" runat="server"
+                    ImageUrl="" Width="170px"
+                    Height="128px" />
+            </td>
+            <td class="auto-style4">
+                <asp:Label ID="Label_Matricule" runat="server">Matricule</asp:Label>
+            </td>
+            <td class="auto-style4"></td>
+            <td class="auto-style4"></td>
+        </tr>
+        <tr>
+            <td class="auto-style4"></td>
+            <td class="auto-style4">
+                <asp:Label ID="Label_Nom" runat="server">Nom</asp:Label>
+            </td>
+            <td class="auto-style4"></td>
+            <td class="auto-style4"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="Label_Prenom" runat="server">Prenom</asp:Label>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="Label_Email" runat="server">Email</asp:Label>
+            </td>
+            <td>
                 <asp:Button ID="TextBox_ModifierEmail" class="btn btn-primary" runat="server" Text="Modifier Email" />
-                &nbsp;&nbsp;
-                <asp:Button ID="TextBox_ModifierMotPasse" class="btn btn-primary" runat="server" Text="Modifier Mot Passe" />
-                <br />
-            </td>
+                </td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td align="center" class="auto-style1">
-                <asp:MultiView ActiveViewIndex="0" runat="server" ID="mv">
-                    <asp:View runat="server">
-                        <asp:Panel ID="Panel_Email" runat="server" CssClass="auto-style2" Height="213px">
-                            <asp:Label ID="Label2" runat="server" Text="Email :"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_EmailOld" runat="server" Height="25px" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:Label ID="Label3" runat="server" Text="Nouvelle Email :"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_EmailNew" runat="server" Height="25px" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:Label ID="Label4" runat="server" Text="Confermer Email :"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_ConfermerEmail" runat="server" Height="25px" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:CompareValidator ID="CompareValidator_Email" runat="server" ControlToCompare="TextBox_ConfermerEmail" ControlToValidate="TextBox_EmailNew" ErrorMessage="Email n'est pas correcte !!" ForeColor="Red"></asp:CompareValidator>
-                            <br />
-                            <asp:Button ID="Button_ChangeEmail" runat="server" Text="Change Email" class="btn btn-primary" />
-                        </asp:Panel>
-                    </asp:View>
-                    <asp:View runat="server">
-                        <asp:Panel ID="Panel_Email0" runat="server" CssClass="auto-style2" Height="236px">
-                            <asp:Label ID="Label6" runat="server" Text="Mot passe :"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_motPassOld" runat="server" Height="25px" TextMode="Password" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:Label ID="Label7" runat="server" Text="Nouvelle Mot Passe"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_MotPassNew" runat="server" Height="25px" TextMode="Password" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:Label ID="Label8" runat="server" Text="Confermer Mot Passe :"></asp:Label>
-                            <br />
-                            <asp:TextBox ID="TextBox_ConfermerMotPasse" runat="server" Height="25px" TextMode="Password" Width="279px"></asp:TextBox>
-                            <br />
-                            <asp:CompareValidator ID="CompareValidator_MotPass" runat="server" ControlToCompare="TextBox_ConfermerMotPasse" ControlToValidate="TextBox_MotPassNew" ErrorMessage="Mot Passe n'est pas correcte !!" ForeColor="Red"></asp:CompareValidator>
-                            <br />
-                            <asp:Button ID="Button_ChangeEmail0" runat="server" Text="Change Mot Passe" Width="175px" class="btn btn-primary" />
-                        </asp:Panel>
-                    </asp:View>
-                </asp:MultiView>
+            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="Label_Prenom_MotPass" runat="server">Mot de passe</asp:Label>
             </td>
-        </tr>
-        <tr>
-            <td class="style3" align="center">
-                <br />
-                <br />
-            </td>
-
-        </tr>
-        <tr>
-            <td class="style3" align="center">&nbsp;</td>
-
+            <td>
+                <asp:Button ID="TextBox_ModifierMotPasse" class="btn btn-primary" runat="server" Text="Modifier Mot Passe" Width="153px" />
+                </td>
+            <td>&nbsp;</td>
         </tr>
     </table>
 </asp:Content>

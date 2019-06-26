@@ -10,96 +10,96 @@
 namespace e_FormaPro_v2._0.Forms.Directeur {
     
     
-    public partial class ProfileDericteur {
+    public partial class Proposition {
         
         /// <summary>
-        /// FileUpload1 control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// Button_Upload control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Upload;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// imgPicture control.
+        /// DropDownList_Formateur control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPicture;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Formateur;
         
         /// <summary>
-        /// Label_Matricule control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Matricule;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Label_Nom control.
+        /// DropDownList_Module control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Nom;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Module;
         
         /// <summary>
-        /// Label_Prenom control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Prenom;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Label_Email control.
+        /// TextBox_Message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Email;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Message;
         
         /// <summary>
-        /// TextBox_ModifierEmail control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TextBox_ModifierEmail;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Label_Prenom_MotPass control.
+        /// TextBox_Date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Prenom_MotPass;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Date;
         
         /// <summary>
-        /// TextBox_ModifierMotPasse control.
+        /// Button_Envoyer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TextBox_ModifierMotPasse;
+        protected global::System.Web.UI.WebControls.Button Button_Envoyer;
     }
 }

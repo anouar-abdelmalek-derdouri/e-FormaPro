@@ -113,6 +113,7 @@
     <Content Include="Forms\Directeur\JourFeries.aspx" />
     <Content Include="Forms\Directeur\listedesformateur.aspx" />
     <Content Include="Forms\Directeur\ProfileDericteur.aspx" />
+    <Content Include="Forms\Directeur\Proposition.aspx" />
     <Content Include="Forms\Directeur\Salles.aspx" />
     <Content Include="Forms\Directeur\Module.aspx" />
     <Content Include="Forms\Directeur\Passage_Fin Formation.aspx" />
@@ -490,6 +491,13 @@
     </Compile>
     <Compile Include="Forms\Directeur\ProfileDericteur.aspx.designer.cs">
       <DependentUpon>ProfileDericteur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\Proposition.aspx.cs">
+      <DependentUpon>Proposition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\Proposition.aspx.designer.cs">
+      <DependentUpon>Proposition.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\Salles.aspx.cs">
       <DependentUpon>Salles.aspx</DependentUpon>
