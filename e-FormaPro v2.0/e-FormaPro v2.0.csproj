@@ -111,6 +111,7 @@
     <Content Include="Forms\Directeur\GestionFormateurs.aspx" />
     <Content Include="Forms\Directeur\Groupe.aspx" />
     <Content Include="Forms\Directeur\JourFeries.aspx" />
+    <Content Include="Forms\Directeur\listedesformateur.aspx" />
     <Content Include="Forms\Directeur\ProfileDericteur.aspx" />
     <Content Include="Forms\Directeur\Salles.aspx" />
     <Content Include="Forms\Directeur\Module.aspx" />
@@ -317,6 +318,11 @@
     <Compile Include="Forms\Directeur\Club.aspx.designer.cs">
       <DependentUpon>Club.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Directeur\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Directeur\Delegation.aspx.cs">
       <DependentUpon>Delegation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -470,6 +476,13 @@
     </Compile>
     <Compile Include="Forms\Directeur\JourFeries.aspx.designer.cs">
       <DependentUpon>JourFeries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\listedesformateur.aspx.cs">
+      <DependentUpon>listedesformateur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\listedesformateur.aspx.designer.cs">
+      <DependentUpon>listedesformateur.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\ProfileDericteur.aspx.cs">
       <DependentUpon>ProfileDericteur.aspx</DependentUpon>
@@ -744,6 +757,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\e-FormaPro v2.0.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Directeur\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="Forms\Directeur\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Forms\Directeur\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

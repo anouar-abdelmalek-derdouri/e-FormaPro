@@ -18,7 +18,7 @@
                         <asp:RadioButton ID="RadioButton_NomComplet" runat="server" Text="Nom Complet" 
                             GroupName="Stagiaire" />
                         <asp:RadioButton ID="RadioButton_Code" runat="server" Text="Code" 
-                            GroupName="Stagiaire" class="code" />
+                            GroupName="Stagiaire" />
                     </td>
                 </tr>
                 <tr>
@@ -35,16 +35,64 @@
                         <br />
                         <br />
                         <asp:Button ID="Button_Rechercher" runat="server" Text="Recherche" 
-                            Width="140px" />
+                            Width="140px" onclick="Button_Rechercher_Click" />
                         <asp:Button ID="Button_Actualiser" runat="server" Text="Actualiser" 
                             Width="138px" />
                         <br />
                         <br />
-                        <asp:GridView ID="GridView_Stagiaire" runat="server" Width="785px">
+                        <asp:GridView ID="GridView_Stagiaire" runat="server" Width="785px" 
+                            CellPadding="4" ForeColor="#333333" GridLines="None" 
+                            onselectedindexchanged="GridView_Stagiaire_SelectedIndexChanged">
+                            <AlternatingRowStyle BackColor="White" />
+                            <Columns>
+                                <asp:TemplateField HeaderText="Notes">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" 
+                                            CommandName="Select" Text="Notes"></asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                            <EditRowStyle BackColor="#2461BF" />
+                            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#EFF3FB" />
+                            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                            <SortedDescendingHeaderStyle BackColor="#4870BE" />
                         </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                            SelectCommand="SELECT * FROM [Notes] WHERE ([Stagiaire] = @Stagiaire)">
+                            <SelectParameters>
+                                <asp:SessionParameter Name="Stagiaire" SessionField="note" Type="String" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
                         <br />
                         <br />
-                        <asp:GridView ID="GridView_NoteStagiaire" runat="server" Width="785px">
+                        <asp:GridView ID="GridView_NoteStagiaire" runat="server" Width="785px" 
+                            AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Stagiaire,Examen" 
+                            DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                            <AlternatingRowStyle BackColor="White" />
+                            <Columns>
+                                <asp:BoundField DataField="Stagiaire" HeaderText="Stagiaire" ReadOnly="True" 
+                                    SortExpression="Stagiaire" />
+                                <asp:BoundField DataField="Examen" HeaderText="Examen" ReadOnly="True" 
+                                    SortExpression="Examen" />
+                                <asp:BoundField DataField="Note" HeaderText="Note" SortExpression="Note" />
+                            </Columns>
+                            <EditRowStyle BackColor="#2461BF" />
+                            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#EFF3FB" />
+                            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                            <SortedDescendingHeaderStyle BackColor="#4870BE" />
                         </asp:GridView>
                     </td>
                 </tr>
