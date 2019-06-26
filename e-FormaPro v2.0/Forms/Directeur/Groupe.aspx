@@ -36,7 +36,7 @@
                                 DataSourceID="SqlDataSource1" DataTextField="Nom" DataValueField="Id_Groupes">
                 </asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                                ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                                ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                                 SelectCommand="SELECT * FROM [Groupes]"></asp:SqlDataSource>
                             <br />
                         </td>
@@ -70,7 +70,7 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-                                ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                                ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                                 SelectCommand="SELECT [CIN], [Nom], [Prenom] FROM [Stagiaires] WHERE ([Groupe] = @Groupe)">
                                 <SelectParameters>
                                     <asp:ControlParameter ControlID="DropDownList_Groupe" Name="Groupe" 
