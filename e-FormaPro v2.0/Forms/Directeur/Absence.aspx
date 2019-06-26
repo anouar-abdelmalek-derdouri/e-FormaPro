@@ -22,20 +22,34 @@
                     </tr>
                     <tr>
                         <td style="height: 45px" align="center">
-                            <asp:Label ID="Label1" runat="server" Text="Formateur:"></asp:Label>
-                            <br />
-                            <asp:DropDownList ID="DropDownList_Formateur" runat="server" Height="28px" Width="173px">
-                            </asp:DropDownList>
                             <br />
                             <br />
+                            <br />
+                <asp:GridView ID="GridView_Absence" runat="server" Width="663px" AutoGenerateColumns="False" DataKeyNames="Id_Demande_Absence_Formateur" DataSourceID="SqlDataSource_Absence" OnRowDataBound="GridView_Absence_RowDataBound">
+                    <Columns>
+                        <asp:BoundField DataField="Id_Demande_Absence_Formateur" HeaderText="Id_Demande_Absence_Formateur" InsertVisible="False" ReadOnly="True" SortExpression="Id_Demande_Absence_Formateur" />
+                        <asp:BoundField DataField="Motif" HeaderText="Motif" SortExpression="Motif" />
+                        <asp:BoundField DataField="DateD" HeaderText="DateD" SortExpression="DateD" />
+                        <asp:BoundField DataField="DateF" HeaderText="DateF" SortExpression="DateF" />
+                        <asp:BoundField DataField="Formateur" HeaderText="Formateur" SortExpression="Formateur" />
+                        <asp:BoundField DataField="Etat_Demande" HeaderText="Etat_Demande" SortExpression="Etat_Demande" />
+                        <asp:TemplateField HeaderText="Accepter">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="ImageButton_Accepter" runat="server" ImageUrl="~/img/Directeur/checkmark_20px.png" OnClick="ImageButton_Accepter_Click" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Refuser"></asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+
+
                             <br />
                         </td>
                     </tr>
                     <tr>
                         <td style="height: 39px" align="center">
-                            <asp:Label ID="Label2" runat="server" Text="Date:"></asp:Label>
                             <br />
-                            <asp:TextBox   ID="TextBox_Date" runat="server" TextMode="Date" Width="166px"></asp:TextBox>
+                            <asp:SqlDataSource ID="SqlDataSource_Absence" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" SelectCommand="SELECT * FROM [Demande_Absence_Formateur]"></asp:SqlDataSource>
                             <br />
                             <br />
                             <br />
@@ -43,14 +57,7 @@
                     </tr>
                     <tr>
                         <td style="height: 43px" align="center">
-                            <asp:Label ID="Label3" runat="server" Text="Nombre d'heure:"></asp:Label>
                             <br />
-                            <asp:DropDownList ID="DropDownList_NombreDHeurs" runat="server" Height="23px" Width="75px">
-                                <asp:ListItem>1</asp:ListItem>
-                                <asp:ListItem>2</asp:ListItem>
-                                <asp:ListItem>3</asp:ListItem>
-                                <asp:ListItem>4</asp:ListItem>
-                            </asp:DropDownList>
                             <br />
                             <br />
                             <br />
@@ -58,25 +65,18 @@
                     </tr>
                     <tr>
                         <td style="height: 48px" align="center">
-                            <asp:Label ID="Label4" runat="server" Text="Motifs"></asp:Label>
                             <br />
-                            <asp:TextBox ID="TextBox_Montifs" runat="server" Height="58px" TextMode="MultiLine" Width="171px"></asp:TextBox>
                             <br />
                         </td>
                     </tr>
                     <tr>
                         <td style="height: 48px" align="center">
-                            <asp:Button ID="Button_Ajouter" class="btn btn-primary" runat="server" Text="Ajouter" Width="117px" Height="38px" />
-                        </td>
+                            &nbsp;</td>
                     </tr>
 
                     <tr>
                         <td style="height: 48px;  width : 80%" align="center">
-                <asp:GridView ID="GridView1" runat="server" Width="663px">
-                </asp:GridView>
-
-
-                        </td>
+                            &nbsp;</td>
                     </tr>
                 </table>
 
