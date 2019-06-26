@@ -70,9 +70,9 @@
         </tr>
         <tr>
             <td  colspan = "3" align="center">
-                <asp:Chart ID="Chart1" runat="server" Width="619px" DataSourceID="SqlDataSource_Avancement">
+                <asp:Chart ID="Chart1" runat="server" Width="619px" DataSourceID="SqlDataSource_Avancement" BackColor="Transparent" Palette="SeaGreen">
                     <series>
-                        <asp:Series Name="Series1" ChartArea="ChartArea1" XValueMember="MassHorraire" YValueMembers="Cumule">
+                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" XValueMember="MassHorraire" YValueMembers="Cumule">
                         </asp:Series>
                     </series>
                     <chartareas>

@@ -31,7 +31,7 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox_Date" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:TextBox ID="TextBox_DateFin" runat="server" TextMode="Date"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox_DateFin" ErrorMessage="*" ForeColor="Red"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox_DateFin" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
          
         </tr>
@@ -46,10 +46,10 @@
            
             <td class="auto-style1">
                 <asp:TextBox ID="TextBox_Fete" runat="server"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox_Fete" ErrorMessage="*" ForeColor="Red"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox_NbrJour" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:TextBox ID="TextBox_NbrJour" runat="server"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox_NbrJour" ErrorMessage="*" ForeColor="Red"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox_NbrJour" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="TextBox_NbrJour" ErrorMessage="Please insert a valid number greater than 0" ForeColor="Red" Operator="GreaterThan" Type="Integer" ValueToCompare="0"></asp:CompareValidator>
             </td>
            
