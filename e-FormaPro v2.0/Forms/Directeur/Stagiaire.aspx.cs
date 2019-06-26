@@ -83,8 +83,12 @@ namespace e_FormaPro_v2._0.Forms.Directeur
 
         protected void GridView_Stagiaire_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Session["note"] = GridView_NoteStagiaire.SelectedRow.Cells[2].Text; 
+          //  Session["note"] = GridView_NoteStagiaire.SelectedRow.Cells[0].Text.ToString();
         }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            
         }
+    }
     }
