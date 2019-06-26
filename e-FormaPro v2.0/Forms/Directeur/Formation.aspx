@@ -74,7 +74,7 @@
                         </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource_Formations" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" DeleteCommand="DELETE FROM [Formations] WHERE [id_Formation] = @id_Formation" InsertCommand="INSERT INTO [Formations] ([Nom], [Abreviation]) VALUES (@Nom, @Abreviation)" SelectCommand="SELECT * FROM [Formations]" UpdateCommand="UPDATE [Formations] SET [Nom] = @Nom, [Abreviation] = @Abreviation WHERE [id_Formation] = @id_Formation">
+                <asp:SqlDataSource ID="SqlDataSource_Formations" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" DeleteCommand="DELETE FROM [Formations] WHERE [id_Formation] = @id_Formation" InsertCommand="INSERT INTO [Formations] ([Nom], [Abreviation]) VALUES (@Nom, @Abreviation)" SelectCommand="SELECT * FROM [Formations]" UpdateCommand="UPDATE [Formations] SET [Nom] = @Nom, [Abreviation] = @Abreviation WHERE [id_Formation] = @id_Formation">
                     <DeleteParameters>
                         <asp:Parameter Name="id_Formation" Type="Int32" />
                     </DeleteParameters>
@@ -88,6 +88,8 @@
                         <asp:Parameter Name="id_Formation" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
+                <br />
+                <br />
             </td>
            
         </tr>

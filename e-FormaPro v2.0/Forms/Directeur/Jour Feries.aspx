@@ -83,7 +83,7 @@
                         </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource_Jours" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" DeleteCommand="DELETE FROM [JoursFeries] WHERE [id_JoursFeries] = @id_JoursFeries" InsertCommand="INSERT INTO [JoursFeries] ([DateD], [DateF], [Fete], [NbrJour]) VALUES (@DateD, @DateF, @Fete, @NbrJour)" SelectCommand="SELECT * FROM [JoursFeries]" UpdateCommand="UPDATE [JoursFeries] SET [DateD] = @DateD, [DateF] = @DateF, [Fete] = @Fete, [NbrJour] = @NbrJour WHERE [id_JoursFeries] = @id_JoursFeries">
+                <asp:SqlDataSource ID="SqlDataSource_Jours" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" DeleteCommand="DELETE FROM [JoursFeries] WHERE [id_JoursFeries] = @id_JoursFeries" InsertCommand="INSERT INTO [JoursFeries] ([DateD], [DateF], [Fete], [NbrJour]) VALUES (@DateD, @DateF, @Fete, @NbrJour)" SelectCommand="SELECT * FROM [JoursFeries]" UpdateCommand="UPDATE [JoursFeries] SET [DateD] = @DateD, [DateF] = @DateF, [Fete] = @Fete, [NbrJour] = @NbrJour WHERE [id_JoursFeries] = @id_JoursFeries" ProviderName="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString.ProviderName %>">
                     <DeleteParameters>
                         <asp:Parameter Name="id_JoursFeries" Type="Int32" />
                     </DeleteParameters>

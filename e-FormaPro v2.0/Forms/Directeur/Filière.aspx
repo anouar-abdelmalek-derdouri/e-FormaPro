@@ -92,8 +92,8 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource_Formation" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" SelectCommand="SELECT * FROM [Formations]"></asp:SqlDataSource>
-                <asp:SqlDataSource ID="SqlDataSource_Filieres" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" DeleteCommand="DELETE FROM [Filieres] WHERE [id_Filiere] = @id_Filiere" InsertCommand="INSERT INTO [Filieres] ([Nom], [Libelle], [Formation]) VALUES (@Nom, @Libelle, @Formation)" SelectCommand="SELECT * FROM [Filieres]" UpdateCommand="UPDATE [Filieres] SET [Nom] = @Nom, [Libelle] = @Libelle, [Formation] = @Formation WHERE [id_Filiere] = @id_Filiere">
+                <asp:SqlDataSource ID="SqlDataSource_Formation" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" SelectCommand="SELECT * FROM [Formations]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource_Filieres" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" DeleteCommand="DELETE FROM [Filieres] WHERE [id_Filiere] = @id_Filiere" InsertCommand="INSERT INTO [Filieres] ([Nom], [Libelle], [Formation]) VALUES (@Nom, @Libelle, @Formation)" SelectCommand="SELECT * FROM [Filieres]" UpdateCommand="UPDATE [Filieres] SET [Nom] = @Nom, [Libelle] = @Libelle, [Formation] = @Formation WHERE [id_Filiere] = @id_Filiere" ProviderName="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString.ProviderName %>">
                     <DeleteParameters>
                         <asp:Parameter Name="id_Filiere" Type="Int32" />
                     </DeleteParameters>
