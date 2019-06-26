@@ -111,6 +111,7 @@
     <Content Include="Forms\Directeur\GestionFormateurs.aspx" />
     <Content Include="Forms\Directeur\Groupe.aspx" />
     <Content Include="Forms\Directeur\JourFeries.aspx" />
+    <Content Include="Forms\Directeur\listedesformateur.aspx" />
     <Content Include="Forms\Directeur\ProfileDericteur.aspx" />
     <Content Include="Forms\Directeur\Salles.aspx" />
     <Content Include="Forms\Directeur\Module.aspx" />
@@ -470,6 +471,13 @@
     </Compile>
     <Compile Include="Forms\Directeur\JourFeries.aspx.designer.cs">
       <DependentUpon>JourFeries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directeur\listedesformateur.aspx.cs">
+      <DependentUpon>listedesformateur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Directeur\listedesformateur.aspx.designer.cs">
+      <DependentUpon>listedesformateur.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Directeur\ProfileDericteur.aspx.cs">
       <DependentUpon>ProfileDericteur.aspx</DependentUpon>
