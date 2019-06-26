@@ -70,9 +70,10 @@
         </tr>
         <tr>
             <td  colspan = "3" align="center">
-                <asp:Chart ID="Chart1" runat="server" Width="619px" DataSourceID="SqlDataSource_Avancement" BackColor="Transparent" Palette="SeaGreen">
+                <asp:Label ID="Label4" runat="server" Text="Le cumule "></asp:Label>
+                <asp:Chart ID="Chart1" runat="server" Width="619px" DataSourceID="SqlDataSource_Avancement" BackColor="Transparent">
                     <series>
-                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" XValueMember="MassHorraire" YValueMembers="Cumule">
+                        <asp:Series Name="Series1" ChartArea="ChartArea1" XValueMember="MassHorraire" YValueMembers="Cumule">
                         </asp:Series>
                     </series>
                     <chartareas>
@@ -80,6 +81,8 @@
                         </asp:ChartArea>
                     </chartareas>
                 </asp:Chart>
+                <br />
+                La masse horaire du module<br />
                 <asp:SqlDataSource ID="SqlDataSource_Formateur" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" SelectCommand="SELECT *, (Formateurs.Nom + ' ' + Formateurs.Prenom) [Nom complet] FROM [Formateurs]"></asp:SqlDataSource>
                 <br />
                 <asp:SqlDataSource ID="SqlDataSource_Groupe" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString %>" SelectCommand="SELECT * FROM [Groupes]" ProviderName="<%$ ConnectionStrings:Espace_pédagogique2FatiConnectionString.ProviderName %>"></asp:SqlDataSource>

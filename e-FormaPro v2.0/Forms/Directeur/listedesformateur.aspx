@@ -60,7 +60,7 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+        ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
         DeleteCommand="DELETE FROM [Formateurs] WHERE [Matricule] = @Matricule" 
         InsertCommand="INSERT INTO [Formateurs] ([Matricule], [Nom], [Prenom], [DatEmbauche], [Type_Formateur], [DateNaissance], [Telephone], [Email], [MotDePasse], [Addresse], [Filiere]) VALUES (@Matricule, @Nom, @Prenom, @DatEmbauche, @Type_Formateur, @DateNaissance, @Telephone, @Email, @MotDePasse, @Addresse, @Filiere)" 
         SelectCommand="SELECT * FROM [Formateurs]" 

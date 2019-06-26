@@ -35,7 +35,7 @@
                     DataValueField="Matricule">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Formateurs]"></asp:SqlDataSource>
                 <br />
             </td>
@@ -49,7 +49,7 @@
                     DataValueField="Id_Groupes">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Groupes]"></asp:SqlDataSource>
                 <br />
             </td>
@@ -63,7 +63,7 @@
                     DataValueField="Id_Module">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Modules]"></asp:SqlDataSource>
                 <br />
                 <asp:Label ID="Label4" runat="server" Text="Semester :"></asp:Label>
@@ -73,7 +73,7 @@
                     DataValueField="Id_Semestre">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource5" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [Semestres]"></asp:SqlDataSource>
                 <br />
                 <br />
@@ -98,8 +98,7 @@
                     <Columns>
                         <asp:TemplateField ShowHeader="False">
                             <ItemTemplate>
-                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
-                                    CommandName="Delete" Text="Supprimer"></asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete" Text="Supprimer"></asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:BoundField DataField="Id_Affectation" HeaderText="Id_Affectation" 
@@ -110,8 +109,7 @@
                             SortExpression="Groupe" />
                         <asp:BoundField DataField="Module" HeaderText="Module" 
                             SortExpression="Module" />
-                        <asp:BoundField DataField="Semester" HeaderText="Semester" 
-                            SortExpression="Semester" />
+                        <asp:BoundField DataField="Semester" HeaderText="Semester" SortExpression="Semester" />
                     </Columns>
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -125,7 +123,7 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" 
+                    ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString2 %>" 
                     SelectCommand="SELECT * FROM [AffectationFormateursModule]" 
                     DeleteCommand="DELETE FROM [AffectationFormateursModule] WHERE [Id_Affectation] = @Id_Affectation" 
                     InsertCommand="INSERT INTO [AffectationFormateursModule] ([Formateur], [Groupe], [Module], [Semester]) VALUES (@Formateur, @Groupe, @Module, @Semester)" 
