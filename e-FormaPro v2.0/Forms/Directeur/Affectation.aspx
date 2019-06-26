@@ -98,8 +98,7 @@
                     <Columns>
                         <asp:TemplateField ShowHeader="False">
                             <ItemTemplate>
-                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
-                                    CommandName="Delete" Text="Supprimer"></asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete" Text="Supprimer"></asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:BoundField DataField="Id_Affectation" HeaderText="Id_Affectation" 
@@ -110,8 +109,7 @@
                             SortExpression="Groupe" />
                         <asp:BoundField DataField="Module" HeaderText="Module" 
                             SortExpression="Module" />
-                        <asp:BoundField DataField="Semester" HeaderText="Semester" 
-                            SortExpression="Semester" />
+                        <asp:BoundField DataField="Semester" HeaderText="Semester" SortExpression="Semester" />
                     </Columns>
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
