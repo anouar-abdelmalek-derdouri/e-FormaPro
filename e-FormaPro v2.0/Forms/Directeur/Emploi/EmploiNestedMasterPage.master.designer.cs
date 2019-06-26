@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.Emploi
+namespace e_FormaPro_v2._0.Forms.Compte.Forms_Directeur.Emploi
 {
 
 

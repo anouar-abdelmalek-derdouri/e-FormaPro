@@ -7,7 +7,7 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms.Directeur {
+namespace e_FormaPro_v2._0.Forms.Compte {
     
     
     public partial class WebForm3 {

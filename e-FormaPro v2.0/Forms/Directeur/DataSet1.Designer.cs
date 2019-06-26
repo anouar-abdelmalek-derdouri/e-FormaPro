@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace e_FormaPro_v2._0.Forms.Directeur {
+namespace e_FormaPro_v2._0.Forms.Compte {
     
     
     /// <summary>
@@ -2024,7 +2024,7 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         }
     }
 }
-namespace e_FormaPro_v2._0.Forms.Directeur.DataSet1TableAdapters {
+namespace e_FormaPro_v2._0.Forms.Compte.DataSet1TableAdapters {
     
     
     /// <summary>

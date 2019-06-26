@@ -132,6 +132,8 @@
     <Content Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\Valider_Projet.aspx" />
+    <Content Include="img\Directeur\accueil.png" />
+    <Content Include="img\Directeur\background.jpg" />
     <Content Include="img\Directeur\checkmark_20px.png" />
     <Content Include="img\Directeur\CloseWindow_20px.png" />
     <Content Include="img\Directeur\editProperty_20px.png" />
@@ -737,7 +739,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\Directeur\Forms_Directeur\Forms_Espa_Directeur\" />
-    <Folder Include="img\Dericteur\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>

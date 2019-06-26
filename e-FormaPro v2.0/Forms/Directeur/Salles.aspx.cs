@@ -6,13 +6,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using e_FormaPro_v2._0.Utilitaires,
 
 namespace e_FormaPro_v2._0.Forms.Directeur
 {
     public partial class Les_salles : System.Web.UI.Page
     {
-        SqlConnection cnx = new SqlConnection();
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,7 +20,7 @@ namespace e_FormaPro_v2._0.Forms.Directeur
         protected void _Ajouter_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.Connection = cnx;
+            cmd.Connection = Chaines.ConnectionDirecteur;
 
             cmd.CommandText = string.Format(@"select    *
                                               from      Salles
@@ -29,9 +28,9 @@ namespace e_FormaPro_v2._0.Forms.Directeur
                                               TextBox_Salle.Text, TextBox_Capacite.Text,
                                               RadioButton_Cours.Text,
                                               RadioButton_Atelier.Text);
-            cnx.Open();
+            Chaines.ConnectionDirecteur.Open();
             cmd.ExecuteNonQuery();
-            cnx.Close();
+            Chaines.ConnectionDirecteur.Close();
         }
     }
 }
