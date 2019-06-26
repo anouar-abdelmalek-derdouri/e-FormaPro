@@ -87,7 +87,7 @@
                     <li><a href="Filière.aspx"><i class='fa fa-link'></i><span>Filière</span></a></li>
 
                      <li class="treeview">
-                        <a href="#"><i class='fa fa-link'></i><span>Formateur</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <a href="#"><i class='fa fa-link'></i><span>Formateur</span><i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="Absence.aspx">Absence</a></li>
                             <li><a href="Affectation.aspx">Affectation</a></li>
@@ -97,29 +97,29 @@
                     <li class="active"><a href="Groupe.aspx"><i class='fa fa-link'></i><span>Les Groupes</span></a></li>
                     <li><a href="Stagiaire.aspx"><i class='fa fa-link'></i><span>Les Stagiaire</span></a></li>
                     <li><a href="Salles.aspx"><i class='fa fa-link'></i><span>Les Salles</span></a></li>
-                    <li><a href="Etat d'avancement.aspx"><i class='fa fa-link'></i><span>Etat d'avancement</span></a></li>
+                    <li><a href="EtatAvancement.aspx"><i class='fa fa-link'></i><span>Etat d'avancement</span></a></li>
                     
                      <li class="treeview">
                         <a href="#"><i class='fa fa-link'></i><span>Examen</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="#">Proposition</a></li>
-                            <li><a href="Affectation.aspx">Surveillance</a></li>
+                            <li><a href="#">Surveillance</a></li>
                         </ul>
                     </li>
 
                      <li class="treeview">
                         <a href="#"><i class='fa fa-link'></i><span>Absence</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="#">Demande d'autorisation d'absence</a></li>
+                            <li><a href="DemandeAutorisationAbsence.aspx">Demande d'autorisation d'absence</a></li>
                             <li><a href="#">Absences des formateurs</a></li>
                         </ul>
                     </li>
                     
-                    <li><a href="Jour Feries.aspx"><i class='fa fa-link'></i><span>Les jours Fériés</span></a></li>
+                    <li><a href="JourFeries.aspx"><i class='fa fa-link'></i><span>Les jours Fériés</span></a></li>
                     <li><a href="Réunion.aspx"><i class='fa fa-link'></i><span>Réunion</span></a></li>
                     <li><a href="Club.aspx"><i class='fa fa-link'></i><span>Club</span></a></li>
                     <li><a href="Delegation.aspx"><i class='fa fa-link'></i><span>Delegations</span></a></li>
-                    <li><a href="Annee Scolaire.aspx"><i class='fa fa-link'></i><span>Année scolaire</span></a></li>
+                    <li><a href="AnneeScolaire.aspx"><i class='fa fa-link'></i><span>Année scolaire</span></a></li>
         
                 </ul>
                 <!-- /.sidebar-menu -->

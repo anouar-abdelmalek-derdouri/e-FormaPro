@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="Annee Scolaire.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Annee_Scolaire" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Directeur/Master Page_Directeur.Master" AutoEventWireup="true" CodeBehind="AnneeScolaire.aspx.cs" Inherits="e_FormaPro_v2._0.Forms.Directeur.Annee_Scolaire" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
