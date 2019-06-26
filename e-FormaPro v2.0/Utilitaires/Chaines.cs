@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace e_FormaPro_v2._0.Utilitaires
 {
     public static class Chaines
     {
+        public static SqlConnection ConnectionDirecteur = new SqlConnection("Data Source=DESKTOP-PD9FCOL;Initial Catalog=Espace_pédagogique2;Integrated Security=True");
         /// <summary>
         /// Retourne le nom complet comme suit : Prénom NOM
         /// </summary>
