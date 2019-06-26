@@ -51,14 +51,15 @@ namespace e_FormaPro_v2._0.Classes
 
         private string Email;
 
-        public Directeur()
-        {
-        }
-
         public string _Email
         {
             get { return Email; }
             set { Email = value; }
         }
+
+        public Directeur()
+        {
+        }
+
     }
 }

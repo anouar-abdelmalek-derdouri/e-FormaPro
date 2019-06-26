@@ -8,7 +8,7 @@ namespace e_FormaPro_v2._0.Utilitaires
 {
     public static class Chaines
     {
-        public static SqlConnection ConnectionDirecteur = new SqlConnection("Data Source=DESKTOP-PD9FCOL;Initial Catalog=Espace_pédagogique2Fati;Integrated Security=True");
+        public static SqlConnection ConnectionDirecteur = new SqlConnection(@"Data Source=DESKTOP-2OA5OJ4;Initial Catalog=Espace_pédagogique2;Integrated Security=True");
         /// <summary>
         /// Retourne le nom complet comme suit : Prénom NOM
         /// </summary>

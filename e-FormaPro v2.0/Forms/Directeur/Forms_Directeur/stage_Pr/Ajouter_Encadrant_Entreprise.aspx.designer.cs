@@ -7,7 +7,7 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace e_FormaPro_v2._0.Forms.Directeur.Forms_Directeur.stage_Pr {
+namespace e_FormaPro_v2._0.Forms.Compte.Forms_Directeur.stage_Pr {
     
     
     public partial class Ajouter_Encadrent_Entreprise {
