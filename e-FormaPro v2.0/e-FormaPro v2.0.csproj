@@ -129,6 +129,10 @@
     <Content Include="Forms\Stagiaire\stage_Pr\Former_Equipe.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\InfosPersonnelle.aspx" />
     <Content Include="Forms\Stagiaire\stage_Pr\Valider_Projet.aspx" />
+    <Content Include="img\Directeur\CloseWindow_20px.png" />
+    <Content Include="img\Directeur\editProperty_20px.png" />
+    <Content Include="img\Directeur\save_20px.png" />
+    <Content Include="img\Directeur\trash_20px.png" />
     <Content Include="img\Icon_club\1.jpg" />
     <Content Include="img\Icon_club\2.jpg" />
     <Content Include="img\Icon_club\3.jpg" />

@@ -67,15 +67,6 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList_Module;
         
         /// <summary>
-        /// Button_Rechercher control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Rechercher;
-        
-        /// <summary>
         /// Chart1 control.
         /// </summary>
         /// <remarks>
@@ -83,5 +74,41 @@ namespace e_FormaPro_v2._0.Forms.Directeur {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
+        
+        /// <summary>
+        /// SqlDataSource_Formateur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Formateur;
+        
+        /// <summary>
+        /// SqlDataSource_Groupe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Groupe;
+        
+        /// <summary>
+        /// SqlDataSource_Module control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Module;
+        
+        /// <summary>
+        /// SqlDataSource_Avancement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Avancement;
     }
 }

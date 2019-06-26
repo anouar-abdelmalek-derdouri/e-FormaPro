@@ -13,44 +13,42 @@ namespace e_FormaPro_v2._0.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("salam");
+            //Response.Write("salam");
         }
 
         protected void Button_SeConnecter_Click(object sender, EventArgs e)
         {
             #region A décommenter
 
-            //Compte compte = ComptesManager.Existe(TextBox_Login.Text, TextBox_MotDePasse.Text);
+            Compte compte = ComptesManager.Existe(TextBox_Login.Text, TextBox_MotDePasse.Text);
 
-            //if (compte != null)
-            //{
-            //    Session["compte"] = compte;
+            if (compte != null)
+            {
+                Session["compte"] = compte;
 
-            //    if (compte is Directeur)
-            //        Response.Redirect("~/Forms/Directeur/Accueil.aspx");
-            //    else if (compte is Surveillant)
-            //        Response.Redirect("~/Forms/Surveillant/Accueil.aspx");
-            //    else if (compte is Formateur)
-            //        Response.Redirect("~/Forms/Formateur/Accueil.aspx");
-            //    else if (compte is Stagiaire)
-            //        Response.Redirect("~/Forms/Stagiaire/Accueil.aspx");
-            //} 
+                if (compte is e_FormaPro_v2._0.Classes.Directeur)
+                {
+                    Session["DirecteurConnecter"] = TextBox_Login.Text;
+                    Response.Redirect("~/Forms/Directeur/Accueil.aspx");
+                }
+                    
+                //    else if (compte is Surveillant)
+                //        Response.Redirect("~/Forms/Surveillant/Accueil.aspx");
+                //    else if (compte is Formateur)
+                //        Response.Redirect("~/Forms/Formateur/Accueil.aspx");
+                //    else if (compte is Stagiaire)
+                //        Response.Redirect("~/Forms/Stagiaire/Accueil.aspx");
+                //} 
 
-            #endregion
+                #endregion
 
-            
 
-#warning A supprimer : Juste pour la démonstration
-            //Session["compte"] = new Stagiaire() { Login = "120319990002", MotDePasse = "azerty", Nom = "alaoui", Prénom = "hassan" };
-            Response.Redirect("~/Forms/Exemple/Accueil.aspx");
 
-            //The Achievers
-            //if (TextBox_Login.Text == "Directeur" && TextBox_MotDePasse.Text == "azerty")
-            //{
-            //    Response.Redirect("~/Forms/Directeur/Master Page_Directeur.Master");
-            //}
-            Session["login"] = TextBox_Login.Text;
-            Session["password"] = TextBox_MotDePasse.Text;
+
+
+                Session["login"] = TextBox_Login.Text;
+                Session["password"] = TextBox_MotDePasse.Text;
+            }
         }
     }
 }

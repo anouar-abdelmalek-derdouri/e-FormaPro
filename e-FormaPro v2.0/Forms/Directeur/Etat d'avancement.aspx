@@ -30,7 +30,7 @@
             </td>
             <td>
                 <asp:DropDownList ID="DropDownList_Formateur" runat="server" Height="30px" 
-                    Width="186px">
+                    Width="186px" DataSourceID="SqlDataSource_Formateur" DataTextField="Nom" DataValueField="Matricule" AutoPostBack="True">
                 </asp:DropDownList>
                 <br />
                 <br />
@@ -46,7 +46,7 @@
             </td>
             <td class="auto-style2">
                 <asp:DropDownList ID="DropDownList_Groupe" runat="server" Height="30px" 
-                    Width="186px">
+                    Width="186px" AutoPostBack="True" DataSourceID="SqlDataSource_Groupe" DataTextField="Nom" DataValueField="Id_Groupes">
                 </asp:DropDownList>
                 <br />
                 <br />
@@ -62,7 +62,7 @@
             </td>
             <td style="width: 462px">
                 <asp:DropDownList ID="DropDownList_Module" runat="server" Height="30px" 
-                    Width="186px">
+                    Width="186px" AutoPostBack="True" DataSourceID="SqlDataSource_Module" DataTextField="Nom" DataValueField="Id_Module">
                 </asp:DropDownList>
                 <br />
                 <br />
@@ -70,11 +70,9 @@
         </tr>
         <tr>
             <td  colspan = "3" align="center">
-                <asp:Button ID="Button_Rechercher" runat="server" Text="Rechercher" 
-                    Width="301px" class="btn btn-primary" />
-                <asp:Chart ID="Chart1" runat="server" Width="619px">
+                <asp:Chart ID="Chart1" runat="server" Width="619px" DataSourceID="SqlDataSource_Avancement">
                     <series>
-                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1">
+                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" XValueMember="Cumule" YValueMembers="Rest">
                         </asp:Series>
                     </series>
                     <chartareas>
@@ -82,6 +80,18 @@
                         </asp:ChartArea>
                     </chartareas>
                 </asp:Chart>
+                <asp:SqlDataSource ID="SqlDataSource_Formateur" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" SelectCommand="SELECT *, (Formateurs.Nom + ' ' + Formateurs.Prenom) [Nom complet] FROM [Formateurs]"></asp:SqlDataSource>
+                <br />
+                <asp:SqlDataSource ID="SqlDataSource_Groupe" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" SelectCommand="SELECT * FROM [Groupes]"></asp:SqlDataSource>
+                <br />
+                <asp:SqlDataSource ID="SqlDataSource_Module" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" SelectCommand="SELECT * FROM [Modules]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource_Avancement" runat="server" ConnectionString="<%$ ConnectionStrings:Espace_pédagogique2ConnectionString %>" SelectCommand="SELECT SUM(Seances.Duree) AS Cumule, Modules.MassHorraire - SUM(Seances.Duree) AS Rest FROM Seances INNER JOIN Modules ON Modules.Id_Module = Seances.Module INNER JOIN Formateurs ON Formateurs.Matricule = Seances.Formateur INNER JOIN Groupes ON Groupes.Id_Groupes = Seances.Groupe GROUP BY Formateurs.Matricule, Groupes.Id_Groupes, Modules.Id_Module, Modules.MassHorraire HAVING (Formateurs.Matricule = @formateur) AND (Groupes.Id_Groupes = @groupe) AND (Modules.Id_Module = @module)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DropDownList_Formateur" Name="formateur" PropertyName="SelectedValue" />
+                        <asp:ControlParameter ControlID="DropDownList_Groupe" Name="groupe" PropertyName="SelectedValue" />
+                        <asp:ControlParameter ControlID="DropDownList_Module" Name="module" PropertyName="SelectedValue" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             </td>
            
         </tr>
