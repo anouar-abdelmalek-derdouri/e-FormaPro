@@ -12,7 +12,7 @@ namespace Projet
         int i =1;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Image2.ImageUrl = "~/images/1.jpg";
+            Image2.ImageUrl = "~/images/1.jpg";
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
